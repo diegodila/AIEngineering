@@ -1,0 +1,3 @@
+docker pull jupyter/all-spark-notebook
+docker run -d -p 8888:8888  --name note -v $HOME/Projects/AIEngineering:/home/jovyan/work jupyter/all-spark-notebook
+docker logs --tail 3 note
