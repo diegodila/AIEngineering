@@ -1,12 +1,19 @@
 docker pull jupyter/all-spark-notebook
 docker run -d -p 8888:8888  --name note -v $HOME/Projects/AIEngineering:/home/jovyan/work jupyter/all-spark-notebook
 
+-------------------------------------------------------------
 docker run -d -p 8888:8888 --name note \
+--network todo-app \
+-e 'POSTGRES_PASSWORD=my_password' \
 -e JUPYTER_TOKEN="easy" \
 -v $HOME/Projects/AIEngineering:/home/jovyan/work/AIEngineering \
 -v $HOME/Projects/pyspark:/home/jovyan/work/pyspark \
 -v $HOME/Projects/datastructure:/home/jovyan/work/datastructure \
 -v $HOME/Projects/pythonclub:/home/jovyan/work/pythonclub \
+-v $HOME/Projects/greatexpectations:/home/jovyan/work/greatexpectations \
 jupyter/all-spark-notebook
 
 docker logs --tail 3 note
+
+#ver rede do container
+docker inspect paw | grep IPAddress
