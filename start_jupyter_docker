@@ -6,6 +6,7 @@ docker network create todo-app
 
 docker run -d -p 8888:8888 --name note \
 --network todo-app \
+--restart always \
 -e 'POSTGRES_PASSWORD=my_password' \
 -e PASSWORD=121212 \
 -e JUPYTER_TOKEN="easy" \
