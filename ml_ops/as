@@ -1,0 +1,47 @@
+algoritmos de machine learning sao clasificadores?
+
+treinar e testar (metrica de perfomance melhor)
+
+geram um modelo é ele é armazenado um repositorio de modelos
+
+o repositorio tem o modelo e o hyper parametros as configs que foram utilizados para aquele modelo
+
+o repositorio serve para ver qual o tipo de algoritmo utilizado e as configs utilizadas para gerar aquele modelo 
+
+geralmente é escolhido o modelo que tem a melhor perfomance
+e depois e servido o modelo (servico de modelos) a uma aplicacao 
+depois o modelo é sendo monitorado, porque a perfomance do modelo pode se degradar, apresentar erros, previsoes sem logica
+no monitoramento é produzido metricas
+o processo todo pode ser automatizado
+
+criar um bom modelo é um desafio, porem implantalo e mante-lo em prod é desafio ainda maior
+
+modelos sao temporarios, que depende muito do tipo de negocio, quanto tempo 
+
+quais a dependencias de um modelo?
+codigo, dados
+
+quais versoes atuais gerou o modelo?
+
+quais hiper parametros fora utilizados na criacao daquele modelo?
+
+2.1 quando estamos em um esteira de desenvolvimento de modelos, quais versionamentos sao necessarios?
+codigo, hiper parametros, dados utilizados naquela versao
+
+2.2 como é teste de modelo? é so saber se o modelo esta bom ou nao?
+nao é so saber se o modelo é bom. é necessario avaliar as metricas e quais sao os limites de aceitacao, nao podemos colocar um modelo em prod cujo a taxa de certo é igual a uma adivinhacao
+
+2.3 em esteira de desenvolvimento os dados sao importantes no versionamento o que é necessario na esteira?
+gerenciamento de metadados, atributos(colunas), tipos(tipo de dados int/string), verificacao de nulos ou nao, valores fora do dominio por ex. idade=200, novos dominios(uma filial de empresa em novo estado)
+
+2.4 quais a consequencias de um novo atributo ao modelo?
+pode bugar o modelo, ou melhorar
+
+2.5 depois que o modelo esta em producao o que é necessario?
+monitorar o modelo
+
+2.6 no monitoramento do modelo quais sao os acontecimentos mais comuns?
+modelos podem ter a perfomance degradada (acuracia), possibilidade melhorar o modelo, em perfomance de acerto, em perfomance computacional(erros, latencia, time out)
+
+2.7 qual o papel de um devops?
+é um busca integrar e automatizar um esteira de software (desenvolvimento, implantacao, operacao)
