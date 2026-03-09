@@ -45,3 +45,26 @@ modelos podem ter a perfomance degradada (acuracia), possibilidade melhorar o mo
 
 2.7 qual o papel de um devops?
 é um busca integrar e automatizar um esteira de software (desenvolvimento, implantacao, operacao)
+
+
+2.8 quais escopos de machine learning
+criar modelos, versionar modelo e codigo, treinar modelos (experimentacao,(desenvolvimento de software))
+
+2.9 qual o escopo de um MLOps engineer?
+é o equivalente do devops para machine learning, integracao entre a experimentacao(desenvolvimento) e operacao(producao), busca automacao e integracao
+
+2.10 quais os niveis de um MLOps?
+0 - manual
+1 - automacao do pipeline de machine learning 
+2 - automacao da integracao continua e da entrega continua
+
+2.11 um experimento pode ter hiperparametros diferentes?
+sim 
+
+2.12 um experimento pode ter classificadores diferentes? ou algoritmos diferentes?
+sim 
+
+2.13 o que faz o mlflow?
+persintencia de modelos, registro de hiper parametros e metricas, persistencia de graficos, implatacao local ou em um servico (amazon, etc), UI acessada em navegador, compativel com as principais bibliotecas
+
+2.14

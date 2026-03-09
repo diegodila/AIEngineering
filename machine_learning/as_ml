@@ -1,0 +1,22 @@
+1.1 o que é cpu?
+unidade de processamento central
+
+1.2 o que é gpu?
+unidade de processamento grafico
+
+1.3 o que é tpu?
+unidade de processamento tensorial (acelara tarefas de aprendizagem profunda)
+
+1.4 o que é o seaborn?
+é pacote de visualizacao de dados baseado no matplotlib, fornece interface de alto nivel para desenhar grafico estatitiscos 
+
+1.5 o que é o pacote plotly?
+uma biblioteca de visualizacao de dados
+
+1.6 o que é o tensorflow?
+é uma biblioteca de codigo aberto para aprendizado de maquina e pesquisa de redes neurais profundas
+
+1.7 o que é keras?
+biblioteca de rede neural de codigo aberto, roda em cima do tensorflow. permite experimentacao rapida com redes neurais
+
+1.8

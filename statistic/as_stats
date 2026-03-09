@@ -1,0 +1,141 @@
+1.1 quais 3 grupos que estatistica se divide?
+descritiva, probalistica, inferencial
+
+1.2 o que estudamos na estatistica descritiva?
+tipo de variaveis, populacao e amostragem, 
+medidas de centralidade: media, moda e mediana
+medidas de posicao: amplitude e quartis
+medidas de dispersao: variancia e desvio padrao
+
+1.3 o que estudamos na estatistica probalistica?
+conceitos de probalidades: (espaco amostral, eventos e tipos de probabilidades)
+distribuicoes de probabilidades discretas e continuas: binomial, poisson, exponencial e normal
+
+1.4 o que estudamos na estatistica inferencial?
+estimativa: estimacao de parametros e intervalo de confiança
+testes de hipoteses: parametricos e nao parametricos
+correlacao e regressao linear
+
+1.5 quais as principais ferramentas usadas em estatistica?
+linguagem r, spss, sas, python, minitab, excel, bi ou tableu, stata, matla, emblem
+
+1.6 o que sao os dados em estatistica?
+sao informacoes provinientes de contagens, medidas, observacoes e respostas. quando agrupados formam um conjunto de dados
+
+1.7 o que é um conjunto de dados?
+sao todos os elementos de interesse necessarios reunidos ou uma populacao onde sao extraidos parametros
+
+1.8 o que é uma amostra?
+é um subconjunto da populacao, parte da populacao
+onde sao extraidas estatisticas
+
+
+1.9 como é classificacao de uma variavel?
+variavel(qualitativa, quantitativa)
+qualitativa(nominal ou ordinal)
+quantitativa(discreta, continua)
+
+1.10 o que sao variaveis qualitativas?
+sao atributos nao numericos ou que nao servem para realizar calculos ex:(cpf)
+
+1.11 o que sao variaveis qualitativas nominais?
+denominacoes(cores, genero,raca,titulos)
+
+1.12 o que sao variaveis qualitativas ordinais?
+atributos que podem ser classificados ou ordenados
+ex: classificacao de filmes mais assistidos, grau de escolaridade, nivel de satisfação, cpf, id    
+
+1.13 o que sao variaveis quantitativas?
+medidas numericas ou de contagem
+
+1.14 o que sao variaveis quantitativas discretas?
+sao valores finitos ou enumeraveis (quantidade de pessoas numa sala, numero de carros em um estacionamento) (numeros inteiros)
+
+1.15 o que sao variaveis quantitativas continuas?
+infinito valores possiveis num intervalo (renda, tempo, altura) (numeros float, double)
+
+1.16 qual é planejamento do estudo estatistico?
+identificacao da populacao e das variaveis
+plano para coleta de dados
+coleta de dados
+descricao dos dados usando tecnicas da estatistica descritiva
+interpretacoa dos dados e tomadas de decisoes atraves da estatistica inferencial e probabilistica
+analise de erros
+
+1.17 o que é amostragem?
+é a medicao ou contagem de parte de uma populacao
+
+1.18 o que é censo?
+é medicao ou contagem de toda a populacao
+
+1.19 o que é uma amostra aleatoria?
+todos os elementos tem chances iguais de serem relacionados, pode ser com reposicao ou sem reposicap
+
+1.20 quais os tipos de amostragem?
+probabilistica/aleatoria
+nao probalistica/nao aleatoria
+
+1.21 quais os tipos de amostragem probalistica aleatoria?
+simples, estratificada, sistematica, por conglomerados
+
+1.22 quais os tipos de amostragem nao probalistica/nao aleatoria?
+acidental ou conveniencia, intencional, quotas ou proporcional, desproporcional
+
+1.23 qual a tecnica de amostragem na aleatoria simples?
+selecao executada por meio de sorteio, sem nenhum filtro
+
+1.24 qual a tecnica de amostragem na aleatoria estratificada?
+divisao da populacao em grupos e selecao aleatoria de uma amostra de cada grupo
+
+1.25 qual a tecnica de amostragem na aleatoria conglomerados?
+divisao da populacao em grupos com caracteristicas similares, porem heterogeneas, e selecao aleatoria de alguns grupos para analisar todos os elementos destes grupos. Ex divisao da populacao de escolas estaduais por regiao, enfermeiro de uma rede de hospitais, ruas e um bairro 
+
+1.26 qual a tecnica de amostragem na aleatoria sistematica?
+membros da populacao sao ordenados numericamente e sao selecionados aleatoriamente, obedecendo uma sequencia numerica. ex criacao de numeros para cada amostra e selecao obedecendo uma ordem numerica
+
+1.27 quais sao os tipos de distribuicao de frequencia?
+frequencia absoluta, frequencia relativa, frequencia percentual relativa, frequencia acumulada
+
+1.26 o que uma frequencia absoluta?
+onde 5 pessoas tiraram a nota 4 e assim sucessivamente, 3 pessoas tiraram a nota 5
+
+| nota  | frequencia_absoluta | frequencia_relativa | 
+| ----- | ------------------- | ------------------- | 
+| 4     | 5                   | 0,2                 | 
+| 5     | 3                   | 0,12                | 
+| 6     | 2                   | 0,08                | 
+| 7     | 3                   | 0,12                | 
+| 8     | 2                   | 0,08                | 
+| 9     | 10                  | 0,4                 | 
+| total | 25                  | 1                   | 
+
+1.27 o que é uma frequencia relativa?
+é a razao entre a frequencia absoluta e o numero total da frequencia absoluta
+a soma das frequencia relativas tem que sempre ser igual a 1 
+
+ex. 5 / 25 
+
+| nota  | frequencia_absoluta | frequencia_relativa | 
+| ----- | ------------------- | ------------------- | 
+| 4     | 5                   | 0,2                 | 
+| 5     | 3                   | 0,12                | 
+| 6     | 2                   | 0,08                | 
+| 7     | 3                   | 0,12                | 
+| 8     | 2                   | 0,08                | 
+| 9     | 10                  | 0,4                 | 
+| total | 25                  | 1                   | 
+
+1.27 o que é uma frequencia percentual relativa?
+é percentual da frequencia relativa, per 100
+
+| nota  | frequencia_absoluta | frequencia_relativa | frequencia_percentual_relativa |
+| ----- | ------------------- | ------------------- | ------------------------------ |
+| 4     | 5                   | 0,2                 | 20%                            |
+| 5     | 3                   | 0,12                | 12%                            |
+| 6     | 2                   | 0,08                | 08%                            |
+| 7     | 3                   | 0,12                | 12%                            |
+| 8     | 2                   | 0,08                | 08%                            |
+| 9     | 10                  | 0,4                 | 04%                            |
+| total | 25                  | 1                   | 100%                           |
+
+1.28 distribuicao de frequencia 
