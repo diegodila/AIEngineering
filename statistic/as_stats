@@ -190,3 +190,63 @@ a frequência da classe atual.
 | 67-78  | 6          | 72,5        | 0,12                | 48                   |
 | 79-90  | 2          | 84,5        | 0,04                | 50                   |
 | Soma   | 50         |             | 1                   |                      |
+
+1.32 o que sao fronteiras de um histograma?
+é delimitacao da classe, margem de fronteira entre uma classe e outra
+
+| Classe | Fronteiras | Frequência |
+| ------ | ---------- | ---------- |
+| 7-18   | 6,5-18,5   | 6          |
+| 19-30  | 18,5-30,5  | 10         |
+| 31-42  | 30,5-42,5  | 13         |
+| 43-54  | 42,5-54,5  | 8          |
+| 55-66  | 54,5-66,5  | 5          |
+| 67-78  | 66,5-78,5  | 6          |
+| 79-90  | 78,5-90,5  | 2          |
+
+1.33 quando trabalhamos com o grafico de poligono de frequencia, qual variavel que utilizamos?
+o ponto medio no eixo x  e frequencia absoluta no eixo y
+
+| Classe | Frequência | Ponto_Médio | Frequência_Relativa | Frequência_Acumulada |
+| ------ | ---------- | ----------- | ------------------- | -------------------- |
+| 7-18   | 6          | 12,5        | 0,12                | 6                    |
+| 19-30  | 10         | 24,5        | 0,2                 | 16                   |
+| 31-42  | 13         | 36,5        | 0,26                | 29                   |
+| 43-54  | 8          | 48,5        | 0,16                | 37                   |
+| 55-66  | 5          | 60,5        | 0,1                 | 42                   |
+| 67-78  | 6          | 72,5        | 0,12                | 48                   |
+| 79-90  | 2          | 84,5        | 0,04                | 50                   |
+| Soma   | 50         |             | 1                   |                      |
+
+
+1.34 quando trabalhamos com o grafico de ogiva de frequencia, qual variavel que utilizamos?
+Frequência  acumulada no eixo y e fronteiras no eixo x
+
+1.35 em medidas de tendencia central o que é a media?
+soma das entradas de dados dividido pelo numero de entradas
+
+1.36 em medidas de tendencia central o que é a mediana?
+Quando os dados são ordenados (crescente ou decrescente), a mediana é o valor que está no centro dos dados. Caso tenham dois valores centrais, calcula-se a média entre eles
+
+quando o numero é par a medina é a media entre os 2 numeros centrais, senao é o numero central
+
+1.37 em medidas de tendencia central o que é a moda?
+é o valor que aparece com mais frequência no conjunto de dados
+
+1.38 quando o valor nao tem repeticao de entrada na moda, como chama?
+amodal
+
+1.39 quando temos duas modas como é chamado?
+bimodal
+
+1.40 quando temos 3 modas como é chamado?
+trimodal
+
+1.41 Determine a média, a moda e a mediana dos dados amostrais a seguir:
+A = { 10, 23, 32, 40, 57, 57}?
+
+𝑀é𝑑𝑖𝑎= 𝑋 ̅=(∑▒𝑋)/𝑛 = ((10+23+32+40+57+57))/6 = 36,5
+
+𝑀𝑒𝑑𝑖𝑎𝑛𝑎=  (32+40)/2 = 36
+
+𝑀𝑜𝑑𝑎= 57
