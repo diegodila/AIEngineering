@@ -29,8 +29,7 @@ sao todos os elementos de interesse necessarios reunidos ou uma populacao onde s
 é um subconjunto da populacao, parte da populacao
 onde sao extraidas estatisticas
 
-
-1.9 como é classificacao de uma variavel?
+1.9 como é a classificacao de uma variavel?
 variavel(qualitativa, quantitativa)
 qualitativa(nominal ou ordinal)
 quantitativa(discreta, continua)
@@ -43,7 +42,7 @@ denominacoes(cores, genero,raca,titulos)
 
 1.12 o que sao variaveis qualitativas ordinais?
 atributos que podem ser classificados ou ordenados
-ex: classificacao de filmes mais assistidos, grau de escolaridade, nivel de satisfação, cpf, id    
+ex: classificacao de filmes mais assistidos, grau de escolaridade, nivel de satisfação, cpf, id
 
 1.13 o que sao variaveis quantitativas?
 medidas numericas ou de contagem
@@ -69,7 +68,7 @@ analise de erros
 é medicao ou contagem de toda a populacao
 
 1.19 o que é uma amostra aleatoria?
-todos os elementos tem chances iguais de serem relacionados, pode ser com reposicao ou sem reposicap
+todos os elementos tem chances iguais de serem relacionados, pode ser com reposicao ou sem reposicao
 
 1.20 quais os tipos de amostragem?
 probabilistica/aleatoria
@@ -90,7 +89,7 @@ divisao da populacao em grupos e selecao aleatoria de uma amostra de cada grupo
 1.25 qual a tecnica de amostragem na aleatoria conglomerados?
 divisao da populacao em grupos com caracteristicas similares, porem heterogeneas, e selecao aleatoria de alguns grupos para analisar todos os elementos destes grupos. Ex divisao da populacao de escolas estaduais por regiao, enfermeiro de uma rede de hospitais, ruas e um bairro 
 
-1.26 qual a tecnica de amostragem na aleatoria sistematica?
+1.26 qual a tecnica de amostragem nao aleatoria sistematica?
 membros da populacao sao ordenados numericamente e sao selecionados aleatoriamente, obedecendo uma sequencia numerica. ex criacao de numeros para cada amostra e selecao obedecendo uma ordem numerica
 
 1.27 quais sao os tipos de distribuicao de frequencia?
@@ -138,4 +137,56 @@ ex. 5 / 25
 | 9     | 10                  | 0,4                 | 04%                            |
 | total | 25                  | 1                   | 100%                           |
 
-1.28 distribuicao de frequencia 
+1.28 o que é largura de classe?
+é distancia entre as classes, tem 6 classes e 5 distancias entre eles vide ex: temos 6 classes e 5 distancias
+
+| classe | frequencia |
+| ------ | ---------- |
+| 1-5    | 5          |
+| 6-10   | 8          |
+| 11-15  | 6          |
+| 16-20  | 8          |
+| 21-25  | 5          |
+| 26-30  | 4          |
+
+1.29 o que é amplitude?
+a amplitude é a diferença da entrada maxima pela entrada minima. no exemplo a amplitude é 29 (30-1)
+
+| classe | frequencia |
+| ------ | ---------- |
+| 1-5    | 5          |
+| 6-10   | 8          |
+| 11-15  | 6          |
+| 16-20  | 8          |
+| 21-25  | 5          |
+| 26-30  | 4          |
+
+1.30 o que é o ponto medio?
+soma do limite inferior com o superior dividido por 2
+é media dos valores de cada classe, por exemplo (7 + 18) / 2 = 12,5
+
+| Classe | Frequência | Ponto_Médio | Frequência_Relativa | Frequência_Acumulada |
+| ------ | ---------- | ----------- | ------------------- | -------------------- |
+| 7-18   | 6          | 12,5        | 0,12                | 6                    |
+| 19-30  | 10         | 24,5        | 0,2                 | 16                   |
+| 31-42  | 13         | 36,5        | 0,26                | 29                   |
+| 43-54  | 8          | 48,5        | 0,16                | 37                   |
+| 55-66  | 5          | 60,5        | 0,1                 | 42                   |
+| 67-78  | 6          | 72,5        | 0,12                | 48                   |
+| 79-90  | 2          | 84,5        | 0,04                | 50                   |
+| Soma   | 50         |             | 1                   |                      |
+
+1.31 o que é a frequencia acumulada?
+soma das frequências absolutas anteriores com 
+a frequência da classe atual.
+
+| Classe | Frequência | Ponto_Médio | Frequência_Relativa | Frequência_Acumulada |
+| ------ | ---------- | ----------- | ------------------- | -------------------- |
+| 7-18   | 6          | 12,5        | 0,12                | 6                    |
+| 19-30  | 10         | 24,5        | 0,2                 | 16                   |
+| 31-42  | 13         | 36,5        | 0,26                | 29                   |
+| 43-54  | 8          | 48,5        | 0,16                | 37                   |
+| 55-66  | 5          | 60,5        | 0,1                 | 42                   |
+| 67-78  | 6          | 72,5        | 0,12                | 48                   |
+| 79-90  | 2          | 84,5        | 0,04                | 50                   |
+| Soma   | 50         |             | 1                   |                      |
