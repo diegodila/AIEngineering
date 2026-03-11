@@ -255,7 +255,30 @@ A = { 10, 23, 32, 40, 57, 57}?
 Quando alguns valores possuem peso maior na média do que outros
 
 
-1.43
+1.43 Como calculamos uma media ponderada?
+é a somatoria da variavel x peso, dividido pelo peso total, ex: nota 80 x peso 0,20 = 16, a somatoria disso é 85,25 dividido pela somatoria do peso 85,25/ 1 = 85,25 
 
-Avaliação
+| avalicao    | Notas(x) | Peso(w) | x.w   |
+| ----------- | -------- | ------- | ----- |
+| Prova 1     | 80       | 0,20    | 16    |
+| Prova 2     | 95       | 0,15    | 14,25 |
+| Prova Final | 82       | 0,50    | 41    |
+| Trabalho 1  | 90       | 0,10    | 9     |
+| Trabalho 2  | 100      | 0,05    | 5     |
+| Soma        |          | 1       | 85,25 |
+|             |          |         |       |
 
+1.44 como calculamos a media de uma distribuicao de frequencia?
+multiplicamos o ponto medio pela frequencia 
+somamos o produto 2089 e dividimos pela soma da frequencia (acumulada) que da 2089/50 = 41,78
+
+| ponto medio  (x) | frequencia (f) | x.f  |
+| ---------------- | -------------- | ---- |
+| 12,5             | 6              | 75   |
+| 24,5             | 10             | 245  |
+| 36,5             | 13             | 474  |
+| 48,5             | 8              | 388  |
+| 60,5             | 5              | 302  |
+| 72,5             | 6              | 435  |
+| 84,5             | 2              | 169  |
+| soma             | n=50           | 2089 |
