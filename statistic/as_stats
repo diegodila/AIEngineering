@@ -296,7 +296,7 @@ encontramos a média dos valores 41,5
 e fazemos a diferença por cada valor com a média ex. 41-41,5 = -0,5
 
 ex: 41 - 41,5 =-0,5 ; 38 - 41,5 = -3,5 
-dai temos o desvio
+entao temos o desvio de cada valor com relação a media
 
 | valores | desvio |
 | 41      | -0,5   |
@@ -313,10 +313,10 @@ dai temos o desvio
 
 1.47 como calculamos a variancia populacional?
 Diferença entre o valor e a média do conjunto de dados populacional.
-o desvio e elevamos ao quadrado, tendo o desvio padrao
+o desvio e elevamos ao quadrado, sendo a variacia populacional ou (amostral)
 
 seria o desvio ao quadrado sendo 88,5 / 10 (unidade de valores) = 8,85 
-sendo a variancia populacional 
+sendo a variancia populacional  
 e com a raiz quadrada (desvio padrao populacional)
 
 | valores | desvio | (x-u)2 |
@@ -374,4 +374,28 @@ e depois com raiz quadrada temos o desvio padrao amostral
 é  raiz quadrada da variançia amostral
 9,83 = 3,14
 
-1.49 
+1.49 como calculo o desvio padrao para dados agrupados?
+vamos imaginar que tenhamos os grupos (x) e a frequencias desses grupos(f)
+multiplicamos a frequencia de cada grupo(xf) achamos o valor total de grupo
+e depois somamos a frequencia total de cada grupo 
+encontramos a média do grupo total
+e depois fazemos a media do grupo total menos cada grupo
+
+| x (grupo/notas) | f (frequencia/pessoas) | xf (x.f) | (x-x) | (x -x) 2 | (x-x 2 f) |
+| 0               | 10                     | 0        | -1,8  | 3,24     | 32,40     |
+| 1               | 19                     | 19       | -0,8  | 0,64     | 12,16     |
+| 2               | 7                      | 14       | -0,2  | 0,04     | 0,28      |
+| 3               | 7                      | 21       | 1,2   | 1,44     | 10,08     |
+| 4               | 2                      | 8        | 2,2   | 4,84     | 9,68      |
+| 5               | 1                      | 5        | 3,2   | 10,24    | 10,24     |
+| 6               | 4                      | 24       | 4,2   | 17,64    | 70,56     |
+|                 |                        |          |       |          | 145,40    |
+|                 |                        |          |       |          |           |
+
+total de pessoas(f)= 50
+multiplicação de pessoas pelas notas (x.f) e somatoria total (x.f)= 91
+media do grupo total 91/50 = 1,8
+a media do grupo total é utilizada para calcular cada desvio (x-x)
+normalizamos os desvio e elevamos ao quadrado tendo a variancia amostral  (x -x) 2
+depois calculamos cada variancia multiplicando a cada variancia a cada frequencia (x-x 2 f)
+sendo 145,40 /(50-1)  - que o -1 é amostral  sendo 145,40/49=1,72
