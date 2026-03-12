@@ -282,3 +282,96 @@ somamos o produto 2089 e dividimos pela soma da frequencia (acumulada) que da 20
 | 72,5             | 6              | 435  |
 | 84,5             | 2              | 169  |
 | soma             | n=50           | 2089 |
+
+
+1.45 em medidas de dispersao ou variacao, o que é a amplitude?
+é a diferença entre as entradas maximas e minimas.
+ex: [41, 38, 39, 45, 47, 41, 44, 41,37,42]
+47-37 = 10
+
+1.46 como calculamos o desvio populacional?
+Diferença entre o valor e a média do conjunto de dados populacional.
+
+encontramos a média dos valores 41,5
+e fazemos a diferença por cada valor com a média ex. 41-41,5 = -0,5
+
+ex: 41 - 41,5 =-0,5 ; 38 - 41,5 = -3,5 
+dai temos o desvio
+
+| valores | desvio |
+| 41      | -0,5   |
+| 38      | -3,5   |
+| 39      | -2,5   |
+| 45      | 3,5    |
+| 47      | 5,5    |
+| 41      | -0,5   |
+| 44      | 2,5    |
+| 41      | -0,5   |
+| 37      | -4,5   |
+| 42      | 0,5    |
+| 415     | 0      |
+
+1.47 como calculamos a variancia populacional?
+Diferença entre o valor e a média do conjunto de dados populacional.
+o desvio e elevamos ao quadrado, tendo o desvio padrao
+
+seria o desvio ao quadrado sendo 88,5 / 10 (unidade de valores) = 8,85 
+sendo a variancia populacional 
+e com a raiz quadrada (desvio padrao populacional)
+
+| valores | desvio | (x-u)2 |
+| 41      | -0,5   | 0,25   |
+| 38      | -3,5   | 12,25  |
+| 39      | -2,5   | 6,25   |
+| 45      | 3,5    | 12,25  |
+| 47      | 5,5    | 30,25  |
+| 41      | -0,5   | 0,25   |
+| 44      | 2,5    | 6,25   |
+| 41      | -0,5   | 0,25   |
+| 37      | -4,5   | 20,25  |
+| 42      | 0,5    | 0,25   |
+| 415     | 0      | 88,5   |
+
+1.47 como calculamos o desvio padrao populacional?
+a raiz quadrada da variancia populacional
+8,885 = 2,97
+
+| valores | desvio | (x-u)2 |
+| 41      | -0,5   | 0,25   |
+| 38      | -3,5   | 12,25  |
+| 39      | -2,5   | 6,25   |
+| 45      | 3,5    | 12,25  |
+| 47      | 5,5    | 30,25  |
+| 41      | -0,5   | 0,25   |
+| 44      | 2,5    | 6,25   |
+| 41      | -0,5   | 0,25   |
+| 37      | -4,5   | 20,25  |
+| 42      | 0,5    | 0,25   |
+| 415     | 0      | 88,5   |
+
+
+1.48 como calculamos a variancia amostral?
+fazemos uma correção da quantidade com o -1 em relação a variancia populacional
+graus de liberdade (n-1) para correção com relação a variância populacional
+
+88,5 / 9 = 9,83 (variancia amostral)
+e depois com raiz quadrada temos o desvio padrao amostral
+
+| valores | desvio | (x-u)2 |
+| 41      | -0,5   | 0,25   |
+| 38      | -3,5   | 12,25  |
+| 39      | -2,5   | 6,25   |
+| 45      | 3,5    | 12,25  |
+| 47      | 5,5    | 30,25  |
+| 41      | -0,5   | 0,25   |
+| 44      | 2,5    | 6,25   |
+| 41      | -0,5   | 0,25   |
+| 37      | -4,5   | 20,25  |
+| 42      | 0,5    | 0,25   |
+| 415     | 0      | 88,5   |
+
+1.48 como calculamos o desvio padrao amostral?
+é  raiz quadrada da variançia amostral
+9,83 = 3,14
+
+1.49 
