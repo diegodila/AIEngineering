@@ -398,4 +398,73 @@ media do grupo total 91/50 = 1,8
 a media do grupo total é utilizada para calcular cada desvio (x-x)
 normalizamos os desvio e elevamos ao quadrado tendo a variancia amostral  (x -x) 2
 depois calculamos cada variancia multiplicando a cada variancia a cada frequencia (x-x 2 f)
-sendo 145,40 /(50-1)  - que o -1 é amostral  sendo 145,40/49=1,72
+sendo 145,40 /(50-1)  - que o -1 é amostral  sendo 145,40/49=2.96 e raiz quadrada = 1,72 (sendo o desvio padrao amostral de dados agrupados)
+
+1.51 em medidas de posicao o que é sao fractis?
+divisao do conjunto de dados em partes iguais (quartis, percentis, mediana)
+
+1.52 o que sao quartis?
+divide o conjunto de dados em 4 partes iguais
+
+1.53 como calculamos o quartis?
+primeiro colocamos em ordem crescente
+[5,7,9,10,11,13,14,15,16,17,18,18,20,21,37]
+m--------q1--------q2---------q3----------m
+depois procuramos o menor valor e o maior valor
+em seguida encontramos a mediana
+e entao dividimos novamente entre o menor o q2(mediana) e a q2(mediana) e o maior
+
+1.54 como calculamos o limites do outlier?
+com amplitude interquartil (iqr): iqr = q3-q1
+
+1.55 qual é o grafico que analisamos a amplitude interquartil
+boxplot ou caixa e bigodes
+
+1.56 o que sao outliers?
+sao dados discrepantes, isto é, sao dados muito diferentes dos demais dados pertencentes a variavel em analise
+A relevância deles deve ser analisada para definir se continuarão no dataset ou se devem ser tratados (corrigidos, excluídos ou substituídos), pois se não forem relevantes, podem interferir significativamente nos resultados das análises.
+
+
+1.57 qual o grafico que é mais utilizado para identificar outliers?
+boxplot
+
+1.58 quais as formas de se identificar um outliers?
+Eles podem ser identificados por observações diretas no dataset (quando a quantidade for pequena), por gráficos e por funções específicas
+
+1.59 como calculamo a faixa de valores que limitam os outliers?
+A referência de cálculo é o intervalo interquartil (IQR) e obedece a seguinte equação:
+Limite superior = Q3 + 1,5 x IQR
+Limite inferior = Q1 - 1,5 x IQR
+
+1.60 em probabilidade o que é um experimento aleatorio (estocastico)?
+quando apresenta resultados imprevisiveis, mesmo sendo repetido varias vezes
+(loteria, lançamento de dados)
+
+1.61 em probabilidade o que é um experimento deterministico?
+o  resultado é previsivel
+
+1.62  em probabilidade o que é um e espaço amostral?
+conjunto de todos os resultados possiveis (ex: no lançamento de um dado o espaço amostral é 6)
+
+1.63 em probabilidade o que é um evento?
+subconjunto de uma espaço amostral (ex: numeros pares nos dados)
+
+1.64 qual é definição de probabilidade?
+a probabilidade de ocorrer um evento (A) é razão entre o numero de elementos de (A), n(A), e o numero de elemento do espaçop amostral E, n(E).
+P(A) = n(A) / n(E)
+onde a probabilidade sempre esta em 0 e 1
+
+1.65 qual probabilidade de sair numero par no laçamento de um dado
+a = {2,4,6}, portanto, n(A) =
+e = {1,2,3,4,5,6}, portanto, n(E) = 6 (numero de elementos no espaço amostral)
+P(A) = 3 / 6 = 0,5 igual a 50% 
+
+1.66 como calculamos a probabilidade de nao ocorrer um evento?
+P(-A) = 1 - P(A)
+
+1.67 Faça a probabilidade de obter soma diferente de 11 no lançament o de dados simultaneos?
+
+A = {(5,6), (6,5)}, portanto, n(A) = 2
+n(E) = 36  (O espaço amostral E é formado por pares ordenados) E={(1,1),(1,2),…,(1,6),(2,1),…,(6,6)}
+
+ P(A) = 1 - 2/36 = 0,944 = 94%
