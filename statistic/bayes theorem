@@ -1,0 +1,24 @@
+1.1 o que é regra da multiplicação (interseccao eventos dependentes)?
+
+
+1.2 o que é o teorema de bayes?
+é capacidade de encontrar uma probabilidade quando se conhece outras probabilidade
+
+1.3 o que é lei da probabilidade total?
+determina a probabilidade total de um evento que pode ser realizado através de vários eventos distintos
+
+
+1.4 Uma caixa de frutas contém 50 laranjas, 30 maçãs e 20 peras.  O vendedor garante que a probabilidade de encontrar uma laranja estragada é de 4%, uma maçã estragada de 2% e uma pera estragada é de 6%. Escolhendo ao acaso uma fruta desta caixa, qual a probabilidade dela estar estragada?
+P(E) = P(E|L).P(L) + P(E|M).P(M) + P(E|P).P(P)
+P(E) = 0,04 * 0,5 + 0,02*0,3 + 0,06,0.2
+P(E) = 0,038 = 3,8% (lei da probabilidade total)
+
+
+1.5 Em uma fábrica, a máquina X produz 60% da produção diária e a máquina Y produz 40% da produção diária. Sabendo que máquina X produz 2% de peças com defeito e que a máquina Y produz 1,5% de peças com defeito. Se num dia, um item for inspecionado aleatoriamente e descobrir que ele apresenta defeito, qual é a probabilidade de que tenha sido produzido pela máquina X?
+P(D) = P(D|X).P(X) + P(D|Y).P(Y)
+P(D) = 0,02*0,6 0,015*0,4 = 0,018 (lei da probabilidade total)
+0,6*0,02 / 0,018 = 0,667= 66,7 (teorema de bayes)
+
+teorema de bayes = P(X|D)= P(X).P(D|X) / P(D)
+
+
