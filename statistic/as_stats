@@ -492,7 +492,7 @@ n(A B)=2
 1.72 o que é probabilidade da intersecçao de eventos? 
 sao dois eventos, 'A' e 'B', sao independentes entre si (a ocorrencia) de 'A' e 'B' é igual ao produto de cada um
 
-1.72 Qual a probabilidade, num lancamento de uma dado e uma moeda, de sair um numero menor que 3 no dado e face cara na moeda?
+1.73 Qual a probabilidade, num lancamento de uma dado e uma moeda, de sair um numero menor que 3 no dado e face cara na moeda?
 
 n(A)=2 numeros menor 3
 n(B)=1 face cara
@@ -500,3 +500,104 @@ n(E)a=6 numero de elementos no espaco amostral de A
 n(5)b=2 numero de elementos no espaco amostral de B 
 (2/6) * (1/2) 1/6 = 0,167 = 16,7%
 
+1.74 o que é regra da multiplicação (interseccao eventos dependentes)?
+
+
+1.75 o que é o teorema de bayes?
+é capacidade de encontrar uma probabilidade quando se conhece outras probabilidade
+
+1.76 o que é lei da probabilidade total?
+determina a probabilidade total de um evento que pode ser realizado através de vários eventos distintos
+
+
+1.77 Uma caixa de frutas contém 50 laranjas, 30 maçãs e 20 peras.  O vendedor garante que a probabilidade de encontrar uma laranja estragada é de 4%, uma maçã estragada de 2% e uma pera estragada é de 6%. Escolhendo ao acaso uma fruta desta caixa, qual a probabilidade dela estar estragada?
+P(E) = P(E|L).P(L) + P(E|M).P(M) + P(E|P).P(P)
+P(E) = 0,04 * 0,5 + 0,02*0,3 + 0,06,0.2
+P(E) = 0,038 = 3,8% (lei da probabilidade total)
+
+
+1.78 Em uma fábrica, a máquina X produz 60% da produção diária e a máquina Y produz 40% da produção diária. Sabendo que máquina X produz 2% de peças com defeito e que a máquina Y produz 1,5% de peças com defeito. Se num dia, um item for inspecionado aleatoriamente e descobrir que ele apresenta defeito, qual é a probabilidade de que tenha sido produzido pela máquina X?
+P(D) = P(D|X).P(X) + P(D|Y).P(Y)
+P(D) = 0,02*0,6 0,015*0,4 = 0,018 (lei da probabilidade total)
+0,6*0,02 / 0,018 = 0,667= 66,7 (teorema de bayes)
+
+teorema de bayes = P(X|D)= P(X).P(D|X) / P(D)
+
+1.79 o que sao distribuicao de probabilidade discreta?
+lista cada valor possivel que a variavel aleatoria pode assumir, assim como a sua probabilidade
+
+1.80 quais sao as condicoes de um distribuicao de probabilidade discreta?
+probabilidade cada valor é entre 0 e 1
+a soma das probabilidades deve ser igual a 1
+
+1.81 faca uma representacao das distribuicoes de probabilidade discretas
+| classificacao | frequencia (f) | P(x) |
+| 1             | 24             | 0,16 |
+| 2             | 33             | 0,22 |
+| 3             | 42             | 0,28 |
+| 4             | 30             | 0,20 |
+| 5             | 21             | 0,14 |
+| soma          | 150            | 1    |
+
+1.82 do ponto 1.81 faça a media de variaveis discretas?
+| classificacao | frequencia (f) | P(x) | x.P(x) |
+| 1             | 24             | 0,16 | 1.0,16 |
+| 2             | 33             | 0,22 | 2.0,22 |
+| 3             | 42             | 0,28 | 3.0,28 |
+| 4             | 30             | 0,20 | 4.0,20 |
+| 5             | 21             | 0,14 | 5.0,14 |
+| soma          | 150            | 1    | u=2,94 |
+
+1.83 do ponto 1.81 faça a variancia de variaveis discretas?
+| classificacao | frequencia (f) | P(x) | x.P(x) | (x-u)2 | P(x).(x-u)2 |
+| 1             | 24             | 0,16 | 1.0,16 | 3,764  | 0,602       |
+| 2             | 33             | 0,22 | 2.0,22 | 0,884  | 0,194       |
+| 3             | 42             | 0,28 | 3.0,28 | 0,004  | 0,001       |
+| 4             | 30             | 0,20 | 4.0,20 | 1,124  | 0,225       |
+| 5             | 21             | 0,14 | 5.0,14 | 4,244  | 0,594       |
+| soma          | 150            | 1    | u=2,94 |        | 1,616       |
+
+1.84 do ponto 1.81 faça o desvio padrao de variaveis discretas?
+| classificacao | frequencia (f) | P(x) | x.P(x) | (x-u)2 | P(x).(x-u)2 |
+| 1             | 24             | 0,16 | 1.0,16 | 3,764  | 0,602       |
+| 2             | 33             | 0,22 | 2.0,22 | 0,884  | 0,194       |
+| 3             | 42             | 0,28 | 3.0,28 | 0,004  | 0,001       |
+| 4             | 30             | 0,20 | 4.0,20 | 1,124  | 0,225       |
+| 5             | 21             | 0,14 | 5.0,14 | 4,244  | 0,594       |
+| soma          | 150            | 1    | u=2,94 |        | 1,616       |
+
+ao quadrado 1,616 = 1,27
+
+1.85 o que é distribuicao binomial?
+Possibilidade de apenas dois resultados.
+Tentativas idênticas e independentes.
+P(x) = (n! / (n -x)!x!) * px qn-x
+
+n = número de tentativas ou amostras.
+p = probabilidade de sucesso em uma tentativa.
+q = probabilidade de fracasso em uma tentativa.
+x = variável aleatória que representa a contagem do número de sucessos.
+
+Fatorial:
+4! = 4.3.2.1 = 24
+5! = 5.4.3.2.1 = 120
+
+1.86 o que distribuicao geometrica?
+Probabilidade de repetidas tentativas até que o sucesso ocorra.
+Tentativas independentes.
+A probabilidade de sucesso é constante para todas as tentativas.
+
+P(x) = p(q)x-1
+p = probabilidade de sucesso em uma tentativa.
+q = probabilidade de fracasso em uma tentativa.
+x = variável aleatória que representa o número de falhas até o sucesso.
+
+1.87 o que distribuicao de poisson?
+Número de vezes que um evento ocorre num determinado intervalo (tempo, área ou volume).
+Probabilidade do evento ocorrer é a mesma para cada intervalo.
+Número de ocorrências nos intervalos são independentes.
+
+P(x)= ux e -u / x!
+
+u = número médio de ocorrências (frequência).
+x = número de ocorrência num dado intervalo.
