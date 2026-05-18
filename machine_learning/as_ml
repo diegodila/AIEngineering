@@ -19,4 +19,60 @@ uma biblioteca de visualizacao de dados
 1.7 o que é keras?
 biblioteca de rede neural de codigo aberto, roda em cima do tensorflow. permite experimentacao rapida com redes neurais
 
-1.8
+1.8 em escala de grupos qual faz parte de um do outro, AI, machine learning, deep learning?
+deep learning faz parte de machine learning que faz parte de AI
+
+1.9 o que é inteligencia artificial?
+sistemas com habilidade de aprendizado e reacoes como o dos humanos
+
+1.10 o que é machine learning?
+algoritmos com habilidades de aprender por treinamento, sem serem explicitamente programados
+
+1.11 o que é deep learning? 
+complementa o machine learning com habilidade de trabalhar com grandes volumes de dados, imagens, videos, sons
+
+1.12 liste algumas aplicacoes que é utilizado o machine learning?
+sistemas financeiros: prevenção de fraudes e geracao de insights.
+saude: identificacao de tendencias, confirmações e novidades para diagnoticos e tratamentos. Descoberta de novos medicamentos. 
+marketing e vendas: recomendacoes de produtos e servicos atraves de consultas e compras anteriores
+ciencia: eficiencia na analise de dados e resultados de estudos cientificos
+industria:Descoberta de novos materiais, técnicas de fabricação, prevenção de falhas, aperfeiçoamento na produção
+Governo: Geração de insights, análises sócio-econômicas, detecção de fraudes
+transporte: Identificação de padrões e tendências para rotas de transporte.
+
+1.13 quais sao as matematicas envolvidas no machine learning?
+Estatística: Descritiva, Probabilística, Bayesiana e Regressões.
+Álgebra Linear: Vetores e Matrizes, Sistemas Lineares, Estimativa dos mínimos quadrados, transformação linear, autovetores e autovalores.
+Cálculo Multivariado: Funções de várias variáveis, Derivadas Parciais, Integrais Múltiplas, Equações Diferenciais, Geometria Multivariada, Vetor Direcional e GradienteEstatística: Descritiva, Probabilística, Bayesiana e Regressões.
+Álgebra Linear: Vetores e Matrizes, Sistemas Lineares, Estimativa dos mínimos quadrados, transformação linear, autovetores e autovalores.
+Cálculo Multivariado: Funções de várias variáveis, Derivadas Parciais, Integrais Múltiplas, Equações Diferenciais, Geometria Multivariada, Vetor Direcional e Gradiente
+
+1.14 quais sao as formas de apreendizagem de maquina?
+Supervisionada, Não Supervisionada, Aprendizagem por Reforço: 
+
+1.15 o que aprendizagem Supervisionada?
+Interação de um agente externo. O algoritmo possui dados de entrada e de saída para treinamento (Ex.: Análise de crédito). o algoritmo aprende com dados de entrada e dados de saida
+
+1.16 o que aprendizagem não supervisionada?
+Tipo de aprendizagem auto-organizada. Não existe uma resposta ou modelo de referência para treinar o algoritmo (Ex.: Associação ou agrupamento de produtos com similaridades).
+
+1.17 o que é aprendizagem por reforço?
+Recebe informações do ambiente, que indica o erro, mas não a forma de melhorar a ação e o desempenho. 
+O conjunto de dados muda a todo instante, demandando contínuo processo de adaptação (Ex.: movimentação de robôs).
+
+1.18 o que é classificação em aprendizagem supervisionada?
+a variável Resposta é discreta (Sim ou Não, Azul ou Vermelho, 0 ou 1 ou 2).
+
+1.19 o que é regressao em aprendizagem supervisionada?
+Previsão ou predição de um valor numérico.
+
+
+1.20 o que é agrupamento(clustering) em aprendizagem não supervisionada?
+Agrupar dados por características (idade, gostos...)
+
+1.21  o que é associacao em aprendizagem não supervisionada?
+Obter regras com os dados (pais com crianças compram mais doces).
+
+
+1.22 o que é reducao de dimensionalidade  em aprendizagem não supervisionada?
+Escolha das melhores variáveis para otimizar o processo. 
