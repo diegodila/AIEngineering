@@ -66,13 +66,14 @@ a variável Resposta é discreta (Sim ou Não, Azul ou Vermelho, 0 ou 1 ou 2).
 1.19 o que é regressao em aprendizagem supervisionada?
 Previsão ou predição de um valor numérico.
 
-
 1.20 o que é agrupamento(clustering) em aprendizagem não supervisionada?
 Agrupar dados por características (idade, gostos...)
 
 1.21  o que é associacao em aprendizagem não supervisionada?
 Obter regras com os dados (pais com crianças compram mais doces).
 
-
 1.22 o que é reducao de dimensionalidade  em aprendizagem não supervisionada?
 Escolha das melhores variáveis para otimizar o processo. 
+
+2.01 quais alguns dos algoritmos de classificação?
+regressao logistica, naive bayes, arvore de decisao, random forest, knn, maquinas de vetor de suporte, xgboost, lightGBM, catboost, redes neurais artificiais
