@@ -104,3 +104,5 @@ ex: 3 grupos de 25 % para treinamento (A,B,C), 1 grupo para teste 25% (D), depoi
 
 2.01 quais alguns dos algoritmos de classificação?
 regressao logistica, naive bayes, arvore de decisao, random forest, knn, maquinas de vetor de suporte, xgboost, lightGBM, catboost, redes neurais artificiais
+
+2.02
