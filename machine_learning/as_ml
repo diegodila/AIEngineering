@@ -105,4 +105,17 @@ ex: 3 grupos de 25 % para treinamento (A,B,C), 1 grupo para teste 25% (D), depoi
 2.01 quais alguns dos algoritmos de classificação?
 regressao logistica, naive bayes, arvore de decisao, random forest, knn, maquinas de vetor de suporte, xgboost, lightGBM, catboost, redes neurais artificiais
 
-2.02
+2.02 o que é escalonamento?
+Escalonamento tem por objetivo garantir que nenhuma variável tenha mais importância devido à grandes diferenças de valores na criação de um modelo de Machine Learning
+
+2.03 quais tipos de escalonamento que existem?
+Padronização (StandardScaler), Normalização (MinMaxScaler), Escalonamento Robusto (RobustScaler)
+
+2.04 Em escalonamento o que é Padronização (StandardScaler)?
+recomendado quando a variável segue ou se aproxima de uma distribuição normal. Centraliza os dados na média 0 e desvio padrão 1, mantendo assim a coerência com a distribuição.
+
+2.05 Em escalonamento o que é Normalização (MinMaxScaler)? 
+recomendado quando a variável não segue distribuição normal. Coloca os dados a um intervalo fixo, geralmente entre 0 e 1.
+
+2.06 Em escalonamento o que é Escalonamento Robusto (RobustScaler)?
+recomendado quando existem muito outliers na variável.
