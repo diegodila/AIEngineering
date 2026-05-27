@@ -119,3 +119,8 @@ recomendado quando a variável não segue distribuição normal. Coloca os dados
 
 2.06 Em escalonamento o que é Escalonamento Robusto (RobustScaler)?
 recomendado quando existem muito outliers na variável.
+
+2.07 em algoritmos de apredizado nao supervisionada existe uma saida?
+não, passamos os atributos e seleciona os melhores
+
+2.08 
