@@ -75,7 +75,11 @@ Obter regras com os dados (pais com crianças compram mais doces).
 1.22 o que é reducao de dimensionalidade  em aprendizagem não supervisionada?
 Escolha das melhores variáveis para otimizar o processo. 
 
+<<<<<<< Updated upstream
 1.23 quais são as etapas fundamentais para construção do algoritmo?
+=======
+1. quais são as etapas fundamentais para construção do algoritmo?
+>>>>>>> Stashed changes
 1) Análise do problema.
 2) Exploração, Tratamento e Análise dos dados.
 3) Pré processamento dos dados.
@@ -83,6 +87,7 @@ Escolha das melhores variáveis para otimizar o processo.
 5) Criação dos algoritmos de Machine Learning.
 6) Comparação e escolha do melhor algoritmo.
 
+<<<<<<< Updated upstream
 1.24 como fazemos a separação de dados de treino e teste?
 Dados de treino: Certa quantidade dos dados (aproximadamente 70%) destinada para treinar o algoritmo.
 Dados de teste: Quantidade restante dos dados (aproximadamente 30%)  para analisar o desempenho do algoritmo.
@@ -94,10 +99,24 @@ Essa separação deve ocorrer de maneira aleatória para evitar problemas nos mo
 com cross validation
 
 1.27 com utilizar o cross validation para separacao de dados?
+=======
+1.23 como fazemos a separação de dados de treino e teste?
+Dados de treino: Certa quantidade dos dados (aproximadamente 70%) destinada para treinar o algoritmo.
+Dados de teste: Quantidade restante dos dados (aproximadamente 30%)  para analisar o desempenho do algoritmo.
+
+1.24 com devemos fazer a separacao dos dados de treino e teste?
+Essa separação deve ocorrer de maneira aleatória para evitar problemas nos modelos criados (Exemplo: ter uma quantidade de dados que aparecem em pequena quantidade ou nem aparecem nos dados de teste)
+
+1.25 com fazemos uma validacao para verificar se a separação dos dados foi feita corretamente?
+com cross validation
+
+1.26 com utilizar o cross validation para separacao de dados?
+>>>>>>> Stashed changes
 podemos separar os dados em 4 partes (grupos), n_split = 4 (k-folds)
 dai ele utiliza 75 % dos dados para treinamento, 25 para teste
 ex: 3 grupos de 25 % para treinamento (A,B,C), 1 grupo para teste 25% (D), depois o de treinamento fica (A,B,D), teste (C) assim sucessivamente 
 
+<<<<<<< Updated upstream
 1.28 quais os problemas que podemos ter no treinamento?
 1 Underfitting (alto viés): Algoritmo que não se encaixa com os dados de entrada.
 2 Overfitting (alta variancia): Algoritmo ótimo para os dados de entrada e ruim para dados de teste. 
@@ -124,3 +143,8 @@ recomendado quando existem muito outliers na variável.
 não, passamos os atributos e seleciona os melhores
 
 2.08 
+=======
+1.27 quais os problemas que podemos ter no treinamento?
+1 Underfitting (alto viés): Algoritmo que não se encaixa com os dados de entrada.
+2 Overfitting (alta variancia): Algoritmo ótimo para os dados de entrada e ruim para dados de teste. 
+>>>>>>> Stashed changes
