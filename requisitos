@@ -8,3 +8,112 @@ growdev - cientista de dados mlops - glassdoor
 Conhecimento em Python e SQL, com uso de bibliotecas de ML (Scikit-learn, TensorFlow, PyTorch ou similares).
 Experiência com desenvolvimento e manutenção de modelos de machine learning.
 Vivência com ambientes em nuvem (preferencialmente Azure, Databricks ou similares).
+
+
+Vaga: Cloud Data Architect / Data Engineer (AWS)
+
+Atuação: 100% home office
+
+Contratação: PJ
+
+Projeto: Prazo indeterminado
+
+
+
+Buscamos por um(a) Cloud Data Architect / Data Engineer (AWS), para atuar de forma remota, que será responsável por:
+
+
+Administrar e operar ambientes cloud na AWS, com foco em EC2 — provisionamento, configuração, manutenção e otimização de workloads de dados;
+
+Construir e manter pipelines de dados (ETL/ELT) em Python, integrando serviços AWS (S3, Glue, EMR, Redshift);
+
+Estruturar e manter data lakes e data warehouses modernos seguindo arquitetura medallion (raw, trusted, refined);
+
+Integrar e disponibilizar dados para consumo analítico no Power BI;
+
+Garantir segurança, governança e boas práticas de operação (IAM, criptografia, observabilidade).
+
+
+HABILIDADES E EXPERIÊNCIAS ESSENCIAIS:
+
+Vivência hands-on com serviços de dados AWS: S3, Glue (Crawlers, Data Catalog, Jobs ETL), Redshift (modelagem dimensional e performance tuning), EMR (Spark/Hadoop), Athena, Lambda e Step Functions;
+
+Administração de Linux em EC2: systemd, SSH, cron, logs, monitoramento de recursos e troubleshooting;
+
+Engenharia de dados com Python para ETL/ELT (Pandas e PySpark), com cargas em S3 (parquet/csv) e Redshift;
+
+Integração e publicação no Power BI: workspaces, gateways, agendamento e monitoramento de refresh, otimização de datasets e conexão com fontes AWS (S3, Redshift, Athena);
+
+Segurança e governança na AWS: IAM (roles, policies, menor privilégio), criptografia em S3 (SSE-S3/SSE-KMS) e noções de VPC, subnets e security groups;
+
+Versionamento com Git e observabilidade com CloudWatch.
+
+quinto andar engenheiro de dados
+
+Build and maintain a high-performance data platform that meets the company's needs, connects with product solutions, and leads analytical innovation, enabling incredible architectures and efficient platforms;
+Create and edit data pipelines, considering business logic that best applies to the area in question, choosing levels of aggregation, grouping and transforming fields, checking data quality, and cleaning the data;
+Create data modeling and transformation workflows, enabling the creation of clear and accessible data abstractions;
+Responsible for the entire code development lifecycle (monitoring deployment, documentation, performance, security, adding metrics and alarms, ensuring SLO budget compliance, and more);
+Investigate inconsistencies and be able to trace the source of differences (data troubleshooting);
+Enable teams across the company to access and use data more effectively through self-service tools and well-modeled datasets;
+Align with stakeholders to understand their primary needs, while also having a holistic view of the problem and proposing extensible, scalable, and incremental solutions;
+Conduct PoCs and benchmarks to determine the best tool for a given problem, and decide whether to use an off-the-shelf solution or develop one in-house;
+Contribute to defining the strategic vision, crossing team and service boundaries to solve problems;
+Advocate for the value of data analytics and engineering within the organization and fostering a data-driven culture;
+Be a reference within the chapter on technical concepts, tools, and/or best coding practices.
+ 
+
+What we are looking for:
+
+Has 7 or more years of experience in Data Engineering roles;
+Specialist in technologies, solutions, and concepts of Big Data (Spark, Hadoop, Hive, MapReduce) and multiple languages (YAML, Python);
+Experience with Airflow, Spark, AWS and Databricks;
+Strong foundation in software engineering principles, with experience working on data-centric systems;
+Experience with columnar storage solutions and/or data lakehouse concepts;
+Proficiency in Python, or one of the main programming languages, and a passion for writing clean and maintainable code. 
+Strong knowledge in optimizing SQL query performance;
+Experience in building multidimensional data models (Star and/or Snowflake schema);
+Understanding of the data lifecycle and concepts such as lineage, governance, privacy, retention, anonymization, etc.;
+Knowledge in infrastructure areas such as containers and orchestration (Kubernetes, ECS), CI/CD strategies, infrastructure as code (Terraform), observability (Prometheus, Grafana), among others; 
+Proficiency in English - our code, documentation, tools, and materials are often structured in English.
+Excellent communication skills, proactively sharing and collaborating with both technical and non-technical stakeholders to translate business needs into scalable data solutions;
+Experience as a tech/project lead or similar;
+Curiosity, detail-orientation, and thrive in a fast-paced, data-driven environment.
+
+
+About the job
+Estamos em busca de uma pessoa Machine Learning Engineer Sênior com forte experiência em Databricks e MLflow para liderar a construção de uma nova Feature Store corporativa, atuando com arquitetura, governança, qualidade e escalabilidade para projetos de Machine Learning.
+
+
+
+Modelo de Trabalho: Remoto
+
+
+
+Principais Responsabilidades:
+
+Desenvolvimento de Framework Core: Desenvolver componentes modulares e reutilizáveis (Writer, Data Quality, Feature Functions) baseados em boas práticas de engenharia de software, evitando os famosos "Spaghetti Notebooks";
+Garantia de Qualidade e Auditoria: Implementar motores de validação de dados (Data Quality) integrados a ferramentas como Great Expectations ou Delta Expectations, criando lógica de "Gatekeeper" para bloquear dados inconsistentes;
+Modelagem e Persistência Histórica: Desenvolver lógicas avançadas de persistência de dados históricos, incluindo SCD Tipo 2 e Tipo 4, garantindo consistência temporal completa (Point-in-Time Correctness via as-of join);
+Governança e Linhagem: Estruturar o registro de metadados de negócio e técnicos no Unity Catalog (Feature Registry), garantindo consistência semântica e rastreabilidade total integrando com MLflow (FeatureLookup);
+Orquestração e DevOps de Dados: Configurar e orquestrar pipelines de dados complexos e atômicos no Databricks, gerenciando de forma eficiente ambientes (Dev/Prod) e políticas de versionamento/release;
+Foco no Usuário (Discovery & UX): Realizar rodadas de alinhamento com Cientistas de Dados para coletar feedbacks, ajustar escopos técnicos e garantir que a usabilidade da Feature Store atenda às reais necessidades do time de negócios;
+Disseminação de Conhecimento: Liderar a migração de projetos piloto, criar documentações no estilo Self-Service ("Como criar minha primeira Feature") e ministrar workshops práticos (Hands-on) para capacitar o time de Ciência de Dados.
+
+
+Requisitos:
+
+Experiência sólida e comprovada atuando como Engenheiro(a) de Dados Sênior ou Engenheiro(a) de Machine Learning;
+Domínio avançado do ecossistema Databricks (incluindo Unity Catalog, Delta Tables, Databricks Workflows/Jobs);
+Fortes conhecimentos em frameworks de validação de dados (ex: Great Expectations ou Delta Expectations);
+Sólida experiência com MLflow para gerenciamento do ciclo de vida de modelos e linhagem de features.[;
+Experiência prática com estratégias de versionamento de dados e histórico (SCD Tipo 2 / Tipo 4);
+Proficiência em Python voltado para desenvolvimento de pacotes, classes reutilizáveis e testes unitários independentes;
+Conhecimento em conceitos de governança de dados (Metadados, Catálogo, Linhagem, Controle de Acesso).
+
+
+Diferenciais:
+
+Experiência prévia na implementação de Feature Stores do zero (ex: Feast, Databricks Feature Store);
+Familiaridade com taxonomias de transformações complexas (MIT, MDT, ODT);
+Conhecimento da metodologia/lógica de negócio modular E-A-C-TIM.
