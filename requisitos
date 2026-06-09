@@ -80,7 +80,7 @@ Excellent communication skills, proactively sharing and collaborating with both 
 Experience as a tech/project lead or similar;
 Curiosity, detail-orientation, and thrive in a fast-paced, data-driven environment.
 
-
+HVAR
 About the job
 Estamos em busca de uma pessoa Machine Learning Engineer Sênior com forte experiência em Databricks e MLflow para liderar a construção de uma nova Feature Store corporativa, atuando com arquitetura, governança, qualidade e escalabilidade para projetos de Machine Learning.
 
@@ -106,7 +106,7 @@ Requisitos:
 Experiência sólida e comprovada atuando como Engenheiro(a) de Dados Sênior ou Engenheiro(a) de Machine Learning;
 Domínio avançado do ecossistema Databricks (incluindo Unity Catalog, Delta Tables, Databricks Workflows/Jobs);
 Fortes conhecimentos em frameworks de validação de dados (ex: Great Expectations ou Delta Expectations);
-Sólida experiência com MLflow para gerenciamento do ciclo de vida de modelos e linhagem de features.[;
+Sólida experiência com MLflow para gerenciamento do ciclo de vida de modelos e linhagem de features.;
 Experiência prática com estratégias de versionamento de dados e histórico (SCD Tipo 2 / Tipo 4);
 Proficiência em Python voltado para desenvolvimento de pacotes, classes reutilizáveis e testes unitários independentes;
 Conhecimento em conceitos de governança de dados (Metadados, Catálogo, Linhagem, Controle de Acesso).
@@ -126,3 +126,5 @@ O que você pode esperar de mim:
 - Comunicação em Inglês Avançado: Fluência para colaborar em ambientes globais e com stakeholders internacionais.  
 -  Parceria Estratégica: Foco no sucesso contínuo e na evolução técnica dos projetos que acompanho. 
 Sou um entusiasta de arquiteturas modernas e de parcerias baseadas em transparência e resultados. Vamos nos conectar?
+
+criação de experimentos, criação de hiperparemetros com keras com ajuda de cientistas de dados (camadas_ocultas, unidades,)
