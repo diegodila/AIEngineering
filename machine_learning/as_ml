@@ -8,7 +8,7 @@ unidade de processamento grafico
 unidade de processamento tensorial (acelara tarefas de aprendizagem profunda)
 
 1.4 o que é o seaborn?
-é pacote de visualizacao de dados baseado no matplotlib, fornece interface de alto nivel para desenhar grafico estatitiscos 
+é pacote de visualizacao de dados baseado no matplotlib, fornece interface de alto nivel para desenhar grafico estatisticos 
 
 1.5 o que é o pacote plotly?
 uma biblioteca de visualizacao de dados
@@ -88,13 +88,13 @@ Escolha das melhores variáveis para otimizar o processo.
 Dados de treino: Certa quantidade dos dados (aproximadamente 70%) destinada para treinar o algoritmo.
 Dados de teste: Quantidade restante dos dados (aproximadamente 30%)  para analisar o desempenho do algoritmo.
 
-1.25 com devemos fazer a separacao dos dados de treino e teste?
+1.25 como devemos fazer a separacao dos dados de treino e teste?
 Essa separação deve ocorrer de maneira aleatória para evitar problemas nos modelos criados (Exemplo: ter uma quantidade de dados que aparecem em pequena quantidade ou nem aparecem nos dados de teste)
 
-1.26 com fazemos uma validacao para verificar se a separação dos dados foi feita corretamente?
+1.26 como fazemos uma validacao para verificar se a separação dos dados foi feita corretamente?
 com cross validation
 
-1.27 com utilizar o cross validation para separacao de dados?
+1.27 como utilizar o cross validation para separacao de dados?
 podemos separar os dados em 4 partes (grupos), n_split = 4 (k-folds)
 dai ele utiliza 75 % dos dados para treinamento, 25 para teste
 ex: 3 grupos de 25 % para treinamento (A,B,C), 1 grupo para teste 25% (D), depois o de treinamento fica (A,B,D), teste (C) assim sucessivamente 
@@ -124,4 +124,17 @@ recomendado quando existem muito outliers na variável.
 2.07 em algoritmos de apredizado nao supervisionada existe uma saida?
 não, passamos os atributos e seleciona os melhores
 
-2.08
+2.08 o que é o algoritmo naive bayes?
+ele é um dos primeiros algoritmos em machine learning, conhecido com uma classificador probalistico baseado na aplicação do teorema de Bayes
+
+2.09 qual a premissa do algoritmo de naive bayes?
+idependencia entre as variaveis do problema e trabalha muito bem com variaveis categoricas
+
+2.10 quais sao algumas da aplicacoes que algoritmo naive bayes trabalha muito bem?
+filtros de spam, diagnosticos médicos, classificação de informações textuais, analise de credito, separacao de documentos, previsao de falhas
+
+2.11 quais sao uma das vantagens do algoritmo de naive bayes?
+rapido e de facil entendimento, pouco esforço computacional, bom desempenho com muito dados, boas previsoes com poucos dados
+
+2.12 quais sao as desvantagens do algoritmo de naive bayes?
+considera atributos independentes, pode ocorrer nao muito comum uma atribuição de um valor nulo de probabilidade quando uma classe contida no conjunto de teste nao se apresenta no conjunto de treino 
