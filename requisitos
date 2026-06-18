@@ -128,3 +128,47 @@ O que você pode esperar de mim:
 Sou um entusiasta de arquiteturas modernas e de parcerias baseadas em transparência e resultados. Vamos nos conectar?
 
 criação de experimentos, criação de hiperparemetros com keras com ajuda de cientistas de dados (camadas_ocultas, unidades,)
+
+
+Oii Diego, tudo ótimo e você? 
+Isso mesmo, estamos! Você tem interesse?
+
+Se sim, a stack é essa: 
+Procuramos um(a) Engenheiro(a) de Dados Sênior para assumir a responsabilidade técnica de uma plataforma de dados de larga escala em Databricks/Delta Lake, que sustenta um motor de campanhas promocionais para uma instituição financeira cooperativa. A plataforma processa dados transacionais de alto volume (escala de bilhões de registros) de múltiplos sistemas de origem (core bancário legado Oracle, novo core e microserviços MongoDB), consolidando-os em uma arquitetura Medallion confiável e governada. Você será o(a) guardião(ã) do padrão arquitetural — não apenas executando pipelines, mas mantendo o contrato técnico, documentando e disseminando conhecimento para reduzir dependência de pessoa-chave.
+
+Responsabilidades
+
+Projetar, construir e manter pipelines Bronze ? Silver ? Gold em Databricks/Delta Lake com PySpark e SQL.
+Implementar normalização, correlação entre sistemas e regras de qualidade na camada Silver, incluindo deduplicação, tratamento de late-arriving data e identificadores determinísticos (hash).
+Modelar e manter o Star Schema e as One Big Tables (OBT) que alimentam o motor promocional, marketing e BI.
+Definir e implementar estratégia de carga incremental/CDC, MERGE/upsert e SCD das dimensões.
+Otimizar performance em alto volume: particionamento, Z-Ordering, OPTIMIZE/VACUUM, sizing de clusters e controle de custo.
+Implementar governança e LGPD via Unity Catalog: tags de PII, mascaramento por perfil (column masking), controle de acesso e políticas de retenção.
+Estabelecer SLAs de frescor de dados e observabilidade (lineage, monitoramento de qualidade, quarentena).
+Manter a documentação técnica e o contrato arquitetural atualizados; revisar PRs e mentorar engenheiros do time.
+
+Requisitos obrigatórios
+
+Experiência sólida (5+ anos) em engenharia de dados, sendo 3+ anos em Databricks/Spark/Delta Lake em produção.
+Domínio de PySpark e SQL avançado.
+Experiência comprovada com arquitetura Medallion e modelagem dimensional (Star Schema, fatos e dimensões).
+Experiência com dados transacionais de alto volume e tuning de performance (particionamento, Z-Order, otimização de queries).
+Vivência com cargas incrementais/CDC e integração de múltiplas fontes heterogêneas (relacional + NoSQL).
+Conhecimento de governança de dados e LGPD (Unity Catalog, mascaramento, controle de acesso).
+Uso diário de ferramentas de IA no desenvolvimento (GitHub Copilot, Claude Code, CodeRabbit ou equivalentes) para codificação, revisão e supervisão técnica — critério eliminatório no nosso processo.
+Capacidade de documentar e manter padrões arquiteturais e trabalhar com versionamento (Git, PR, CHANGELOG).
+
+Desejáveis
+
+Experiência no setor financeiro/bancário (core bancário, dados de produtos como crédito, investimentos, cartões, PIX).
+Domínio de DT (Delta Tables / tabelas Delta gerenciadas), streaming e validações de qualidade declarativas.
+Certificação Databricks (Data Engineer Associate/Professional).
+Familiaridade com Oracle e MongoDB como fontes.
+Experiência com CI/CD para pipelines de dados.
+
+Perfil/competências
+
+Autonomia para assumir um produto técnico existente e evoluí-lo.
+Pensamento crítico e orientação a dados na tomada de decisão arquitetural.
+Comunicação clara com times de engenharia, produto e clientes.
+Postura de disseminação de conhecimento (mentoria, documentação) — explicitamente valorizada para evitar dependência de pessoa-chave.
