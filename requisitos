@@ -172,3 +172,42 @@ Autonomia para assumir um produto técnico existente e evoluí-lo.
 Pensamento crítico e orientação a dados na tomada de decisão arquitetural.
 Comunicação clara com times de engenharia, produto e clientes.
 Postura de disseminação de conhecimento (mentoria, documentação) — explicitamente valorizada para evitar dependência de pessoa-chave.
+
+empresa: Icon solutions
+Estou bem também!
+Segue descrição:
+
+Contrato: PJ
+Atuação: Remota
+
+Principais Responsabilidades
+- Desenvolver e evoluir pipelines de dados em Databricks utilizando PySpark e SQL
+- Implementar e manter arquiteturas Lakehouse seguindo o padrão Medallion
+- Projetar e construir camadas analíticas (Gold/Semânticas) de alta performance
+- Definir e implementar modelagem dimensional com tabelas Fato, Dimensão e métricas corporativas
+- Garantir governança, rastreabilidade e qualidade dos dados
+- Implementar testes automatizados e monitoramento de pipelines
+- Atuar junto às áreas de negócio na definição e refinamento de requisitos
+- Apoiar estimativas técnicas e planejamento de projetos
+- Monitorar e otimizar custos e performance dos ambientes AWS e Databricks
+- Garantir a consistência das métricas corporativas através do conceito de Single Source of Truth
+
+Requisitos
+- Databricks (Workflows, Delta Lake, notebooks e pipelines)
+- Python para Engenharia de Dados
+- PySpark para processamento distribuído e transformação de dados
+- SQL Avançado (queries complexas, otimização e modelagem analítica)
+- AWS (S3, IAM e serviços relacionados a Data Platform)
+- Arquitetura Lakehouse e Medallion Architecture
+- Data Warehousing (Kimball e/ou Inmon)
+- Modelagem Dimensional (Fatos, Dimensões e Métricas)
+- Desenvolvimento de Pipelines ETL/ELT
+- Governança e Qualidade de Dados
+- Otimização de performance e custos em ambientes de dados
+
+Diferenciais
+- Experiência no segmento farmacêutico
+- Conhecimento em bases de mercado como IQVIA e Close-Up
+- Experiência com Unity Catalog
+- Vivência com ferramentas de observabilidade de dados
+- Certificações relacionadas a AWS, Databricks ou Engenharia de Dados
