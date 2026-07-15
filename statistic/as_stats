@@ -1,0 +1,603 @@
+1.1 quais 3 grupos que estatistica se divide?
+descritiva, probalistica, inferencial
+
+1.2 o que estudamos na estatistica descritiva?
+tipo de variaveis, populacao e amostragem, 
+medidas de centralidade: media, moda e mediana
+medidas de posicao: amplitude e quartis
+medidas de dispersao: variancia e desvio padrao
+
+1.3 o que estudamos na estatistica probalistica?
+conceitos de probalidades: (espaco amostral, eventos e tipos de probabilidades)
+distribuicoes de probabilidades discretas e continuas: binomial, poisson, exponencial e normal
+
+1.4 o que estudamos na estatistica inferencial?
+estimativa: estimacao de parametros e intervalo de confiança
+testes de hipoteses: parametricos e nao parametricos
+correlacao e regressao linear
+
+1.5 quais as principais ferramentas usadas em estatistica?
+linguagem r, spss, sas, python, minitab, excel, bi ou tableu, stata, matla, emblem
+
+1.6 o que sao os dados em estatistica?
+sao informacoes provinientes de contagens, medidas, observacoes e respostas. quando agrupados formam um conjunto de dados
+
+1.7 o que é um conjunto de dados?
+sao todos os elementos de interesse necessarios reunidos ou uma populacao onde sao extraidos parametros
+
+1.8 o que é uma amostra?
+é um subconjunto da populacao, parte da populacao
+onde sao extraidas estatisticas
+
+1.9 como é a classificacao de uma variavel?
+variavel(qualitativa, quantitativa)
+qualitativa(nominal ou ordinal)
+quantitativa(discreta, continua)
+
+1.10 o que sao variaveis qualitativas?
+sao atributos nao numericos ou que nao servem para realizar calculos ex:(cpf)
+
+1.11 o que sao variaveis qualitativas nominais?
+denominacoes(cores, genero,raca,titulos)
+
+1.12 o que sao variaveis qualitativas ordinais?
+atributos que podem ser classificados ou ordenados
+ex: classificacao de filmes mais assistidos, grau de escolaridade, nivel de satisfação, cpf, id
+
+1.13 o que sao variaveis quantitativas?
+medidas numericas ou de contagem
+
+1.14 o que sao variaveis quantitativas discretas?
+sao valores finitos ou enumeraveis (quantidade de pessoas numa sala, numero de carros em um estacionamento) (numeros inteiros)
+
+1.15 o que sao variaveis quantitativas continuas?
+infinito valores possiveis num intervalo (renda, tempo, altura) (numeros float, double)
+
+1.16 qual é planejamento do estudo estatistico?
+identificacao da populacao e das variaveis
+plano para coleta de dados
+coleta de dados
+descricao dos dados usando tecnicas da estatistica descritiva
+interpretacoa dos dados e tomadas de decisoes atraves da estatistica inferencial e probabilistica
+analise de erros
+
+1.17 o que é amostragem?
+é a medicao ou contagem de parte de uma populacao
+
+1.18 o que é censo?
+é medicao ou contagem de toda a populacao
+
+1.19 o que é uma amostra aleatoria?
+todos os elementos tem chances iguais de serem relacionados, pode ser com reposicao ou sem reposicao
+
+1.20 quais os tipos de amostragem?
+probabilistica/aleatoria
+nao probalistica/nao aleatoria
+
+1.21 quais os tipos de amostragem probalistica aleatoria?
+simples, estratificada, sistematica, por conglomerados
+
+1.22 quais os tipos de amostragem nao probalistica/nao aleatoria?
+acidental ou conveniencia, intencional, quotas ou proporcional, desproporcional
+
+1.23 qual a tecnica de amostragem na aleatoria simples?
+selecao executada por meio de sorteio, sem nenhum filtro
+
+1.24 qual a tecnica de amostragem na aleatoria estratificada?
+divisao da populacao em grupos e selecao aleatoria de uma amostra de cada grupo
+
+1.25 qual a tecnica de amostragem na aleatoria conglomerados?
+divisao da populacao em grupos com caracteristicas similares, porem heterogeneas, e selecao aleatoria de alguns grupos para analisar todos os elementos destes grupos. Ex divisao da populacao de escolas estaduais por regiao, enfermeiro de uma rede de hospitais, ruas e um bairro 
+
+1.26 qual a tecnica de amostragem nao aleatoria sistematica?
+membros da populacao sao ordenados numericamente e sao selecionados aleatoriamente, obedecendo uma sequencia numerica. ex criacao de numeros para cada amostra e selecao obedecendo uma ordem numerica
+
+1.27 quais sao os tipos de distribuicao de frequencia?
+frequencia absoluta, frequencia relativa, frequencia percentual relativa, frequencia acumulada
+
+1.26 o que uma frequencia absoluta?
+onde 5 pessoas tiraram a nota 4 e assim sucessivamente, 3 pessoas tiraram a nota 5
+
+| nota  | frequencia_absoluta | frequencia_relativa | 
+| ----- | ------------------- | ------------------- | 
+| 4     | 5                   | 0,2                 | 
+| 5     | 3                   | 0,12                | 
+| 6     | 2                   | 0,08                | 
+| 7     | 3                   | 0,12                | 
+| 8     | 2                   | 0,08                | 
+| 9     | 10                  | 0,4                 | 
+| total | 25                  | 1                   | 
+
+1.27 o que é uma frequencia relativa?
+é a razao entre a frequencia absoluta e o numero total da frequencia absoluta
+a soma das frequencia relativas tem que sempre ser igual a 1 
+
+ex. 5 / 25 
+
+| nota  | frequencia_absoluta | frequencia_relativa | 
+| ----- | ------------------- | ------------------- | 
+| 4     | 5                   | 0,2                 | 
+| 5     | 3                   | 0,12                | 
+| 6     | 2                   | 0,08                | 
+| 7     | 3                   | 0,12                | 
+| 8     | 2                   | 0,08                | 
+| 9     | 10                  | 0,4                 | 
+| total | 25                  | 1                   | 
+
+1.27 o que é uma frequencia percentual relativa?
+é percentual da frequencia relativa, per 100
+
+| nota  | frequencia_absoluta | frequencia_relativa | frequencia_percentual_relativa |
+| ----- | ------------------- | ------------------- | ------------------------------ |
+| 4     | 5                   | 0,2                 | 20%                            |
+| 5     | 3                   | 0,12                | 12%                            |
+| 6     | 2                   | 0,08                | 08%                            |
+| 7     | 3                   | 0,12                | 12%                            |
+| 8     | 2                   | 0,08                | 08%                            |
+| 9     | 10                  | 0,4                 | 04%                            |
+| total | 25                  | 1                   | 100%                           |
+
+1.28 o que é largura de classe?
+é distancia entre as classes, tem 6 classes e 5 distancias entre eles vide ex: temos 6 classes e 5 distancias
+
+| classe | frequencia |
+| ------ | ---------- |
+| 1-5    | 5          |
+| 6-10   | 8          |
+| 11-15  | 6          |
+| 16-20  | 8          |
+| 21-25  | 5          |
+| 26-30  | 4          |
+
+1.29 o que é amplitude?
+a amplitude é a diferença da entrada maxima pela entrada minima. no exemplo a amplitude é 29 (30-1)
+
+| classe | frequencia |
+| ------ | ---------- |
+| 1-5    | 5          |
+| 6-10   | 8          |
+| 11-15  | 6          |
+| 16-20  | 8          |
+| 21-25  | 5          |
+| 26-30  | 4          |
+
+1.30 o que é o ponto medio?
+soma do limite inferior com o superior dividido por 2
+é media dos valores de cada classe, por exemplo (7 + 18) / 2 = 12,5
+
+| Classe | Frequência | Ponto_Médio | Frequência_Relativa | Frequência_Acumulada |
+| ------ | ---------- | ----------- | ------------------- | -------------------- |
+| 7-18   | 6          | 12,5        | 0,12                | 6                    |
+| 19-30  | 10         | 24,5        | 0,2                 | 16                   |
+| 31-42  | 13         | 36,5        | 0,26                | 29                   |
+| 43-54  | 8          | 48,5        | 0,16                | 37                   |
+| 55-66  | 5          | 60,5        | 0,1                 | 42                   |
+| 67-78  | 6          | 72,5        | 0,12                | 48                   |
+| 79-90  | 2          | 84,5        | 0,04                | 50                   |
+| Soma   | 50         |             | 1                   |                      |
+
+1.31 o que é a frequencia acumulada?
+soma das frequências absolutas anteriores com 
+a frequência da classe atual.
+
+| Classe | Frequência | Ponto_Médio | Frequência_Relativa | Frequência_Acumulada |
+| ------ | ---------- | ----------- | ------------------- | -------------------- |
+| 7-18   | 6          | 12,5        | 0,12                | 6                    |
+| 19-30  | 10         | 24,5        | 0,2                 | 16                   |
+| 31-42  | 13         | 36,5        | 0,26                | 29                   |
+| 43-54  | 8          | 48,5        | 0,16                | 37                   |
+| 55-66  | 5          | 60,5        | 0,1                 | 42                   |
+| 67-78  | 6          | 72,5        | 0,12                | 48                   |
+| 79-90  | 2          | 84,5        | 0,04                | 50                   |
+| Soma   | 50         |             | 1                   |                      |
+
+1.32 o que sao fronteiras de um histograma?
+é delimitacao da classe, margem de fronteira entre uma classe e outra
+
+| Classe | Fronteiras | Frequência |
+| ------ | ---------- | ---------- |
+| 7-18   | 6,5-18,5   | 6          |
+| 19-30  | 18,5-30,5  | 10         |
+| 31-42  | 30,5-42,5  | 13         |
+| 43-54  | 42,5-54,5  | 8          |
+| 55-66  | 54,5-66,5  | 5          |
+| 67-78  | 66,5-78,5  | 6          |
+| 79-90  | 78,5-90,5  | 2          |
+
+1.33 quando trabalhamos com o grafico de poligono de frequencia, qual variavel que utilizamos?
+o ponto medio no eixo x  e frequencia absoluta no eixo y
+
+| Classe | Frequência | Ponto_Médio | Frequência_Relativa | Frequência_Acumulada |
+| ------ | ---------- | ----------- | ------------------- | -------------------- |
+| 7-18   | 6          | 12,5        | 0,12                | 6                    |
+| 19-30  | 10         | 24,5        | 0,2                 | 16                   |
+| 31-42  | 13         | 36,5        | 0,26                | 29                   |
+| 43-54  | 8          | 48,5        | 0,16                | 37                   |
+| 55-66  | 5          | 60,5        | 0,1                 | 42                   |
+| 67-78  | 6          | 72,5        | 0,12                | 48                   |
+| 79-90  | 2          | 84,5        | 0,04                | 50                   |
+| Soma   | 50         |             | 1                   |                      |
+
+
+1.34 quando trabalhamos com o grafico de ogiva de frequencia, qual variavel que utilizamos?
+Frequência  acumulada no eixo y e fronteiras no eixo x
+
+1.35 em medidas de tendencia central o que é a media?
+soma das entradas de dados dividido pelo numero de entradas
+
+1.36 em medidas de tendencia central o que é a mediana?
+Quando os dados são ordenados (crescente ou decrescente), a mediana é o valor que está no centro dos dados. Caso tenham dois valores centrais, calcula-se a média entre eles
+
+quando o numero é par a medina é a media entre os 2 numeros centrais, senao é o numero central
+
+1.37 em medidas de tendencia central o que é a moda?
+é o valor que aparece com mais frequência no conjunto de dados
+
+1.38 quando o valor nao tem repeticao de entrada na moda, como chama?
+amodal
+
+1.39 quando temos duas modas como é chamado?
+bimodal
+
+1.40 quando temos 3 modas como é chamado?
+trimodal
+
+1.41 Determine a média, a moda e a mediana dos dados amostrais a seguir:
+A = { 10, 23, 32, 40, 57, 57}?
+
+𝑀é𝑑𝑖𝑎= 𝑋 ̅=(∑▒𝑋)/𝑛 = ((10+23+32+40+57+57))/6 = 36,5
+
+𝑀𝑒𝑑𝑖𝑎𝑛𝑎=  (32+40)/2 = 36
+
+𝑀𝑜𝑑𝑎= 57
+
+1.42 o que é a media ponderada?
+Quando alguns valores possuem peso maior na média do que outros
+
+
+1.43 Como calculamos uma media ponderada?
+é a somatoria da variavel x peso, dividido pelo peso total, ex: nota 80 x peso 0,20 = 16, a somatoria disso é 85,25 dividido pela somatoria do peso 85,25/ 1 = 85,25 
+
+| avalicao    | Notas(x) | Peso(w) | x.w   |
+| ----------- | -------- | ------- | ----- |
+| Prova 1     | 80       | 0,20    | 16    |
+| Prova 2     | 95       | 0,15    | 14,25 |
+| Prova Final | 82       | 0,50    | 41    |
+| Trabalho 1  | 90       | 0,10    | 9     |
+| Trabalho 2  | 100      | 0,05    | 5     |
+| Soma        |          | 1       | 85,25 |
+|             |          |         |       |
+
+1.44 como calculamos a media de uma distribuicao de frequencia?
+multiplicamos o ponto medio pela frequencia 
+somamos o produto 2089 e dividimos pela soma da frequencia (acumulada) que da 2089/50 = 41,78
+
+| ponto medio  (x) | frequencia (f) | x.f  |
+| ---------------- | -------------- | ---- |
+| 12,5             | 6              | 75   |
+| 24,5             | 10             | 245  |
+| 36,5             | 13             | 474  |
+| 48,5             | 8              | 388  |
+| 60,5             | 5              | 302  |
+| 72,5             | 6              | 435  |
+| 84,5             | 2              | 169  |
+| soma             | n=50           | 2089 |
+
+
+1.45 em medidas de dispersao ou variacao, o que é a amplitude?
+é a diferença entre as entradas maximas e minimas.
+ex: [41, 38, 39, 45, 47, 41, 44, 41,37,42]
+47-37 = 10
+
+1.46 como calculamos o desvio populacional?
+Diferença entre o valor e a média do conjunto de dados populacional.
+
+encontramos a média dos valores 41,5
+e fazemos a diferença por cada valor com a média ex. 41-41,5 = -0,5
+
+ex: 41 - 41,5 =-0,5 ; 38 - 41,5 = -3,5 
+entao temos o desvio de cada valor com relação a media
+
+| valores | desvio |
+| 41      | -0,5   |
+| 38      | -3,5   |
+| 39      | -2,5   |
+| 45      | 3,5    |
+| 47      | 5,5    |
+| 41      | -0,5   |
+| 44      | 2,5    |
+| 41      | -0,5   |
+| 37      | -4,5   |
+| 42      | 0,5    |
+| 415     | 0      |
+
+1.47 como calculamos a variancia populacional?
+Diferença entre o valor e a média do conjunto de dados populacional.
+o desvio e elevamos ao quadrado, sendo a variacia populacional ou (amostral)
+
+seria o desvio ao quadrado sendo 88,5 / 10 (unidade de valores) = 8,85 
+sendo a variancia populacional  
+e com a raiz quadrada (desvio padrao populacional)
+
+| valores | desvio | (x-u)2 |
+| 41      | -0,5   | 0,25   |
+| 38      | -3,5   | 12,25  |
+| 39      | -2,5   | 6,25   |
+| 45      | 3,5    | 12,25  |
+| 47      | 5,5    | 30,25  |
+| 41      | -0,5   | 0,25   |
+| 44      | 2,5    | 6,25   |
+| 41      | -0,5   | 0,25   |
+| 37      | -4,5   | 20,25  |
+| 42      | 0,5    | 0,25   |
+| 415     | 0      | 88,5   |
+
+1.47 como calculamos o desvio padrao populacional?
+a raiz quadrada da variancia populacional
+8,885 = 2,97
+
+| valores | desvio | (x-u)2 |
+| 41      | -0,5   | 0,25   |
+| 38      | -3,5   | 12,25  |
+| 39      | -2,5   | 6,25   |
+| 45      | 3,5    | 12,25  |
+| 47      | 5,5    | 30,25  |
+| 41      | -0,5   | 0,25   |
+| 44      | 2,5    | 6,25   |
+| 41      | -0,5   | 0,25   |
+| 37      | -4,5   | 20,25  |
+| 42      | 0,5    | 0,25   |
+| 415     | 0      | 88,5   |
+
+
+1.48 como calculamos a variancia amostral?
+fazemos uma correção da quantidade com o -1 em relação a variancia populacional
+graus de liberdade (n-1) para correção com relação a variância populacional
+
+88,5 / 9 = 9,83 (variancia amostral)
+e depois com raiz quadrada temos o desvio padrao amostral
+
+| valores | desvio | (x-u)2 |
+| 41      | -0,5   | 0,25   |
+| 38      | -3,5   | 12,25  |
+| 39      | -2,5   | 6,25   |
+| 45      | 3,5    | 12,25  |
+| 47      | 5,5    | 30,25  |
+| 41      | -0,5   | 0,25   |
+| 44      | 2,5    | 6,25   |
+| 41      | -0,5   | 0,25   |
+| 37      | -4,5   | 20,25  |
+| 42      | 0,5    | 0,25   |
+| 415     | 0      | 88,5   |
+
+1.48 como calculamos o desvio padrao amostral?
+é  raiz quadrada da variançia amostral
+9,83 = 3,14
+
+1.49 como calculo o desvio padrao para dados agrupados?
+vamos imaginar que tenhamos os grupos (x) e a frequencias desses grupos(f)
+multiplicamos a frequencia de cada grupo(xf) achamos o valor total de grupo
+e depois somamos a frequencia total de cada grupo 
+encontramos a média do grupo total
+e depois fazemos a media do grupo total menos cada grupo
+
+| x (grupo/notas) | f (frequencia/pessoas) | xf (x.f) | (x-x) | (x -x) 2 | (x-x 2 f) |
+| 0               | 10                     | 0        | -1,8  | 3,24     | 32,40     |
+| 1               | 19                     | 19       | -0,8  | 0,64     | 12,16     |
+| 2               | 7                      | 14       | -0,2  | 0,04     | 0,28      |
+| 3               | 7                      | 21       | 1,2   | 1,44     | 10,08     |
+| 4               | 2                      | 8        | 2,2   | 4,84     | 9,68      |
+| 5               | 1                      | 5        | 3,2   | 10,24    | 10,24     |
+| 6               | 4                      | 24       | 4,2   | 17,64    | 70,56     |
+|                 |                        |          |       |          | 145,40    |
+|                 |                        |          |       |          |           |
+
+total de pessoas(f)= 50
+multiplicação de pessoas pelas notas (x.f) e somatoria total (x.f)= 91
+media do grupo total 91/50 = 1,8
+a media do grupo total é utilizada para calcular cada desvio (x-x)
+normalizamos os desvio e elevamos ao quadrado tendo a variancia amostral  (x -x) 2
+depois calculamos cada variancia multiplicando a cada variancia a cada frequencia (x-x 2 f)
+sendo 145,40 /(50-1)  - que o -1 é amostral  sendo 145,40/49=2.96 e raiz quadrada = 1,72 (sendo o desvio padrao amostral de dados agrupados)
+
+1.51 em medidas de posicao o que é sao fractis?
+divisao do conjunto de dados em partes iguais (quartis, percentis, mediana)
+
+1.52 o que sao quartis?
+divide o conjunto de dados em 4 partes iguais
+
+1.53 como calculamos o quartis?
+primeiro colocamos em ordem crescente
+[5,7,9,10,11,13,14,15,16,17,18,18,20,21,37]
+m--------q1--------q2---------q3----------m
+depois procuramos o menor valor e o maior valor
+em seguida encontramos a mediana
+e entao dividimos novamente entre o menor o q2(mediana) e a q2(mediana) e o maior
+
+1.54 como calculamos o limites do outlier?
+com amplitude interquartil (iqr): iqr = q3-q1
+
+1.55 qual é o grafico que analisamos a amplitude interquartil
+boxplot ou caixa e bigodes
+
+1.56 o que sao outliers?
+sao dados discrepantes, isto é, sao dados muito diferentes dos demais dados pertencentes a variavel em analise
+A relevância deles deve ser analisada para definir se continuarão no dataset ou se devem ser tratados (corrigidos, excluídos ou substituídos), pois se não forem relevantes, podem interferir significativamente nos resultados das análises.
+
+
+1.57 qual o grafico que é mais utilizado para identificar outliers?
+boxplot
+
+1.58 quais as formas de se identificar um outliers?
+Eles podem ser identificados por observações diretas no dataset (quando a quantidade for pequena), por gráficos e por funções específicas
+
+1.59 como calculamo a faixa de valores que limitam os outliers?
+A referência de cálculo é o intervalo interquartil (IQR) e obedece a seguinte equação:
+Limite superior = Q3 + 1,5 x IQR
+Limite inferior = Q1 - 1,5 x IQR
+
+1.60 em probabilidade o que é um experimento aleatorio (estocastico)?
+quando apresenta resultados imprevisiveis, mesmo sendo repetido varias vezes
+(loteria, lançamento de dados)
+
+1.61 em probabilidade o que é um experimento deterministico?
+o  resultado é previsivel
+
+1.62  em probabilidade o que é um e espaço amostral?
+conjunto de todos os resultados possiveis (ex: no lançamento de um dado o espaço amostral é 6)
+
+1.63 em probabilidade o que é um evento?
+subconjunto de uma espaço amostral (ex: numeros pares nos dados)
+
+1.64 qual é definição de probabilidade?
+a probabilidade de ocorrer um evento (A) é razão entre o numero de elementos de (A), n(A), e o numero de elemento do espaçop amostral E, n(E).
+P(A) = n(A) / n(E)
+onde a probabilidade sempre esta em 0 e 1
+
+1.65 qual probabilidade de sair numero par no laçamento de um dado
+a = {2,4,6}, portanto, n(A) =
+e = {1,2,3,4,5,6}, portanto, n(E) = 6 (numero de elementos no espaço amostral)
+P(A) = 3 / 6 = 0,5 igual a 50% 
+
+1.66 como calculamos a probabilidade de nao ocorrer um evento?
+P(-A) = 1 - P(A)
+
+1.67 Faça a probabilidade de obter soma diferente de 11 no lançamento o de dados simultaneos?
+
+A = {(5,6), (6,5)}, portanto, n(A) = 2
+n(E) = 36  (O espaço amostral E é formado por pares ordenados) E={(1,1),(1,2),…,(1,6),(2,1),…,(6,6)}
+
+ P(A) = 1 - 2/36 = 0,944 = 94%
+
+1.68 O que é a probabilidade da união de eventos?
+a probabilidade de ocorrer o evento 'A' ou o evento 'B' é igual a probabilidade de ocorrer 'A' mais a probabilidade de ocorrer 'B' menos a probabilidade de ocorrer 'A' e 'B'.
+
+1.69 numa comunidade de 1000 habitantes, 400 são socios de um clube A, 300 de um clube B e 100 de ambos. Qual a probabilidade de uma pessoa escolhida ao acaso ser sócia de A ou de B?
+
+n(E)= 1000
+n(A)= 400
+n(B)= 300
+n(A B)= 100
+(400/1000) + (300/1000) - (100/1000) = 6/10 = 0,6 * 100 = 60 por cento 
+
+1.70 o que é probabilidade condicional?
+a probabilidade de ocorrencia do evento 'A' condicionada ao evento 'B'
+
+1.71 qual a probabilidade, num laçamento simultaneo de dois lados, aparecerem faces com numeros impares, com a condicao de que a soma seja 8
+b = [(2,6),(3,5),(4,4),(5,3),(6,2)]
+n(B)= 5
+n(A B)=2
+2/5 = 0.4 = 40 por cento 
+
+1.72 o que é probabilidade da intersecçao de eventos? 
+sao dois eventos, 'A' e 'B', sao independentes entre si (a ocorrencia) de 'A' e 'B' é igual ao produto de cada um
+
+1.73 Qual a probabilidade, num lancamento de uma dado e uma moeda, de sair um numero menor que 3 no dado e face cara na moeda?
+
+n(A)=2 numeros menor 3
+n(B)=1 face cara
+n(E)a=6 numero de elementos no espaco amostral de A
+n(5)b=2 numero de elementos no espaco amostral de B 
+(2/6) * (1/2) 1/6 = 0,167 = 16,7%
+
+1.74 o que é regra da multiplicação (interseccao eventos dependentes)?
+
+
+1.75 o que é o teorema de bayes?
+é capacidade de encontrar uma probabilidade quando se conhece outras probabilidade
+
+1.76 o que é lei da probabilidade total?
+determina a probabilidade total de um evento que pode ser realizado através de vários eventos distintos
+
+
+1.77 Uma caixa de frutas contém 50 laranjas, 30 maçãs e 20 peras.  O vendedor garante que a probabilidade de encontrar uma laranja estragada é de 4%, uma maçã estragada de 2% e uma pera estragada é de 6%. Escolhendo ao acaso uma fruta desta caixa, qual a probabilidade dela estar estragada?
+P(E) = P(E|L).P(L) + P(E|M).P(M) + P(E|P).P(P)
+P(E) = 0,04 * 0,5 + 0,02*0,3 + 0,06,0.2
+P(E) = 0,038 = 3,8% (lei da probabilidade total)
+
+
+1.78 Em uma fábrica, a máquina X produz 60% da produção diária e a máquina Y produz 40% da produção diária. Sabendo que máquina X produz 2% de peças com defeito e que a máquina Y produz 1,5% de peças com defeito. Se num dia, um item for inspecionado aleatoriamente e descobrir que ele apresenta defeito, qual é a probabilidade de que tenha sido produzido pela máquina X?
+P(D) = P(D|X).P(X) + P(D|Y).P(Y)
+P(D) = 0,02*0,6 0,015*0,4 = 0,018 (lei da probabilidade total)
+0,6*0,02 / 0,018 = 0,667= 66,7 (teorema de bayes)
+
+teorema de bayes = P(X|D)= P(X).P(D|X) / P(D)
+
+1.79 o que sao distribuicao de probabilidade discreta?
+lista cada valor possivel que a variavel aleatoria pode assumir, assim como a sua probabilidade
+
+1.80 quais sao as condicoes de um distribuicao de probabilidade discreta?
+probabilidade cada valor é entre 0 e 1
+a soma das probabilidades deve ser igual a 1
+
+1.81 faca uma representacao das distribuicoes de probabilidade discretas
+| classificacao | frequencia (f) | P(x) |
+| 1             | 24             | 0,16 |
+| 2             | 33             | 0,22 |
+| 3             | 42             | 0,28 |
+| 4             | 30             | 0,20 |
+| 5             | 21             | 0,14 |
+| soma          | 150            | 1    |
+
+1.82 do ponto 1.81 faça a media de variaveis discretas?
+| classificacao | frequencia (f) | P(x) | x.P(x) |
+| 1             | 24             | 0,16 | 1.0,16 |
+| 2             | 33             | 0,22 | 2.0,22 |
+| 3             | 42             | 0,28 | 3.0,28 |
+| 4             | 30             | 0,20 | 4.0,20 |
+| 5             | 21             | 0,14 | 5.0,14 |
+| soma          | 150            | 1    | u=2,94 |
+
+1.83 do ponto 1.81 faça a variancia de variaveis discretas?
+| classificacao | frequencia (f) | P(x) | x.P(x) | (x-u)2 | P(x).(x-u)2 |
+| 1             | 24             | 0,16 | 1.0,16 | 3,764  | 0,602       |
+| 2             | 33             | 0,22 | 2.0,22 | 0,884  | 0,194       |
+| 3             | 42             | 0,28 | 3.0,28 | 0,004  | 0,001       |
+| 4             | 30             | 0,20 | 4.0,20 | 1,124  | 0,225       |
+| 5             | 21             | 0,14 | 5.0,14 | 4,244  | 0,594       |
+| soma          | 150            | 1    | u=2,94 |        | 1,616       |
+
+1.84 do ponto 1.81 faça o desvio padrao de variaveis discretas?
+| classificacao | frequencia (f) | P(x) | x.P(x) | (x-u)2 | P(x).(x-u)2 |
+| 1             | 24             | 0,16 | 1.0,16 | 3,764  | 0,602       |
+| 2             | 33             | 0,22 | 2.0,22 | 0,884  | 0,194       |
+| 3             | 42             | 0,28 | 3.0,28 | 0,004  | 0,001       |
+| 4             | 30             | 0,20 | 4.0,20 | 1,124  | 0,225       |
+| 5             | 21             | 0,14 | 5.0,14 | 4,244  | 0,594       |
+| soma          | 150            | 1    | u=2,94 |        | 1,616       |
+
+ao quadrado 1,616 = 1,27
+
+1.85 o que é distribuicao binomial?
+Possibilidade de apenas dois resultados.
+Tentativas idênticas e independentes.
+P(x) = (n! / (n -x)!x!) * px qn-x
+
+n = número de tentativas ou amostras.
+p = probabilidade de sucesso em uma tentativa.
+q = probabilidade de fracasso em uma tentativa.
+x = variável aleatória que representa a contagem do número de sucessos.
+
+Fatorial:
+4! = 4.3.2.1 = 24
+5! = 5.4.3.2.1 = 120
+
+1.86 o que distribuicao geometrica?
+Probabilidade de repetidas tentativas até que o sucesso ocorra.
+Tentativas independentes.
+A probabilidade de sucesso é constante para todas as tentativas.
+
+P(x) = p(q)x-1
+p = probabilidade de sucesso em uma tentativa.
+q = probabilidade de fracasso em uma tentativa.
+x = variável aleatória que representa o número de falhas até o sucesso.
+
+1.87 o que distribuicao de poisson?
+Número de vezes que um evento ocorre num determinado intervalo (tempo, área ou volume).
+Probabilidade do evento ocorrer é a mesma para cada intervalo.
+Número de ocorrências nos intervalos são independentes.
+
+P(x)= ux e -u / x!
+
+u = número médio de ocorrências (frequência).
+x = número de ocorrência num dado intervalo.
