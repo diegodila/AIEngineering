@@ -1,139 +1,118 @@
 1.1 o que é cpu?
-unidade de processamento central
+
 
 1.2 o que é gpu?
-unidade de processamento grafico
+
 
 1.3 o que é tpu?
-unidade de processamento tensorial (acelara tarefas de aprendizagem profunda)
+
 
 1.4 o que é o seaborn?
-é pacote de visualizacao de dados baseado no matplotlib, fornece interface de alto nivel para desenhar grafico estatisticos 
+
 
 1.5 o que é o pacote plotly?
-uma biblioteca de visualizacao de dados
+
 
 1.6 o que é o tensorflow?
-é uma biblioteca de codigo aberto para aprendizado de maquina e pesquisa de redes neurais profundas
+
 
 1.7 o que é keras?
-biblioteca de rede neural de codigo aberto, roda em cima do tensorflow. permite experimentacao rapida com redes neurais
+
 
 1.8 em escala de grupos qual faz parte de um do outro, AI, machine learning, deep learning?
-deep learning faz parte de machine learning que faz parte de AI
+
 
 1.9 o que é inteligencia artificial?
-sistemas com habilidade de aprendizado e reacoes como o dos humanos
+
 
 1.10 o que é machine learning?
-algoritmos com habilidades de aprender por treinamento, sem serem explicitamente programados
+
 
 1.11 o que é deep learning? 
-complementa o machine learning com habilidade de trabalhar com grandes volumes de dados, imagens, videos, sons
+
 
 1.12 liste algumas aplicacoes que é utilizado o machine learning?
-sistemas financeiros: prevenção de fraudes e geracao de insights.
-saude: identificacao de tendencias, confirmações e novidades para diagnoticos e tratamentos. Descoberta de novos medicamentos. 
-marketing e vendas: recomendacoes de produtos e servicos atraves de consultas e compras anteriores
-ciencia: eficiencia na analise de dados e resultados de estudos cientificos
-industria:Descoberta de novos materiais, técnicas de fabricação, prevenção de falhas, aperfeiçoamento na produção
-Governo: Geração de insights, análises sócio-econômicas, detecção de fraudes
-transporte: Identificação de padrões e tendências para rotas de transporte.
+
 
 1.13 quais sao as matematicas envolvidas no machine learning?
-Estatística: Descritiva, Probabilística, Bayesiana e Regressões.
-Álgebra Linear: Vetores e Matrizes, Sistemas Lineares, Estimativa dos mínimos quadrados, transformação linear, autovetores e autovalores.
-Cálculo Multivariado: Funções de várias variáveis, Derivadas Parciais, Integrais Múltiplas, Equações Diferenciais, Geometria Multivariada, Vetor Direcional e GradienteEstatística: Descritiva, Probabilística, Bayesiana e Regressões.
-Álgebra Linear: Vetores e Matrizes, Sistemas Lineares, Estimativa dos mínimos quadrados, transformação linear, autovetores e autovalores.
-Cálculo Multivariado: Funções de várias variáveis, Derivadas Parciais, Integrais Múltiplas, Equações Diferenciais, Geometria Multivariada, Vetor Direcional e Gradiente
+
 
 1.14 quais sao as formas de apreendizagem de maquina?
-Supervisionada, Não Supervisionada, Aprendizagem por Reforço: 
+
 
 1.15 o que aprendizagem Supervisionada?
-Interação de um agente externo. O algoritmo possui dados de entrada e de saída para treinamento (Ex.: Análise de crédito). o algoritmo aprende com dados de entrada e dados de saida
+
 
 1.16 o que aprendizagem não supervisionada?
-Tipo de aprendizagem auto-organizada. Não existe uma resposta ou modelo de referência para treinar o algoritmo (Ex.: Associação ou agrupamento de produtos com similaridades).
+
 
 1.17 o que é aprendizagem por reforço?
-Recebe informações do ambiente, que indica o erro, mas não a forma de melhorar a ação e o desempenho. 
+
 O conjunto de dados muda a todo instante, demandando contínuo processo de adaptação (Ex.: movimentação de robôs).
 
 1.18 o que é classificação em aprendizagem supervisionada?
-a variável Resposta é discreta (Sim ou Não, Azul ou Vermelho, 0 ou 1 ou 2).
+
 
 1.19 o que é regressao em aprendizagem supervisionada?
-Previsão ou predição de um valor numérico.
+
 
 1.20 o que é agrupamento(clustering) em aprendizagem não supervisionada?
-Agrupar dados por características (idade, gostos...)
+
 
 1.21  o que é associacao em aprendizagem não supervisionada?
-Obter regras com os dados (pais com crianças compram mais doces).
+
 
 1.22 o que é reducao de dimensionalidade  em aprendizagem não supervisionada?
-Escolha das melhores variáveis para otimizar o processo.
+
 
 1.23 quais são as etapas fundamentais para construção do algoritmo?
-1) Análise do problema.
-2) Exploração, Tratamento e Análise dos dados.
-3) Pré processamento dos dados.
-4) Escolha do grupo de algoritmos que podem ser utilizados.
-5) Criação dos algoritmos de Machine Learning.
-6) Comparação e escolha do melhor algoritmo.
+
 
 1.24 como fazemos a separação de dados de treino e teste?
-Dados de treino: Certa quantidade dos dados (aproximadamente 70%) destinada para treinar o algoritmo.
-Dados de teste: Quantidade restante dos dados (aproximadamente 30%)  para analisar o desempenho do algoritmo.
 
 1.25 como devemos fazer a separacao dos dados de treino e teste?
-Essa separação deve ocorrer de maneira aleatória para evitar problemas nos modelos criados (Exemplo: ter uma quantidade de dados que aparecem em pequena quantidade ou nem aparecem nos dados de teste)
+
 
 1.26 como fazemos uma validacao para verificar se a separação dos dados foi feita corretamente?
-com cross validation
+
 
 1.27 como utilizar o cross validation para separacao de dados?
-podemos separar os dados em 4 partes (grupos), n_split = 4 (k-folds)
-dai ele utiliza 75 % dos dados para treinamento, 25 para teste
-ex: 3 grupos de 25 % para treinamento (A,B,C), 1 grupo para teste 25% (D), depois o de treinamento fica (A,B,D), teste (C) assim sucessivamente 
+
 
 1.28 quais os problemas que podemos ter no treinamento?
-1 Underfitting (alto viés): Algoritmo que não se encaixa com os dados de entrada.
-2 Overfitting (alta variancia): Algoritmo ótimo para os dados de entrada e ruim para dados de teste. 
+
 
 2.01 quais alguns dos algoritmos de classificação?
-regressao logistica, naive bayes, arvore de decisao, random forest, knn, maquinas de vetor de suporte, xgboost, lightGBM, catboost, redes neurais artificiais
+
 
 2.02 o que é escalonamento?
-Escalonamento tem por objetivo garantir que nenhuma variável tenha mais importância devido à grandes diferenças de valores na criação de um modelo de Machine Learning
+
 
 2.03 quais tipos de escalonamento que existem?
-Padronização (StandardScaler), Normalização (MinMaxScaler), Escalonamento Robusto (RobustScaler)
+
 
 2.04 Em escalonamento o que é Padronização (StandardScaler)?
-recomendado quando a variável segue ou se aproxima de uma distribuição normal. Centraliza os dados na média 0 e desvio padrão 1, mantendo assim a coerência com a distribuição.
+
 
 2.05 Em escalonamento o que é Normalização (MinMaxScaler)? 
-recomendado quando a variável não segue distribuição normal. Coloca os dados a um intervalo fixo, geralmente entre 0 e 1.
+
 
 2.06 Em escalonamento o que é Escalonamento Robusto (RobustScaler)?
-recomendado quando existem muito outliers na variável.
+
 
 2.07 em algoritmos de apredizado nao supervisionada existe uma saida?
-não, passamos os atributos e seleciona os melhores
+
 
 2.08 o que é o algoritmo naive bayes?
-ele é um dos primeiros algoritmos em machine learning, conhecido com uma classificador probalistico baseado na aplicação do teorema de Bayes
+
 
 2.09 qual a premissa do algoritmo de naive bayes?
-idependencia entre as variaveis do problema e trabalha muito bem com variaveis categoricas
+
 
 2.10 quais sao algumas da aplicacoes que algoritmo naive bayes trabalha muito bem?
-filtros de spam, diagnosticos médicos, classificação de informações textuais, analise de credito, separacao de documentos, previsao de falhas
 
-2.11 quais sao uma das vantagens do algoritmo de naive bayes?
-rapido e de facil entendimento, pouco esforço computacional, bom desempenho com muito dados, boas previsoes com poucos dados
+
+2.11 quais sao as vantagens do algoritmo de naive bayes?
+
 
 2.12 quais sao as desvantagens do algoritmo de naive bayes?
-considera atributos independentes, pode ocorrer nao muito comum uma atribuição de um valor nulo de probabilidade quando uma classe contida no conjunto de teste nao se apresenta no conjunto de treino 
