@@ -132,7 +132,7 @@ idependencia entre as variaveis do problema e trabalha muito bem com variaveis c
 2.10 quais sao algumas da aplicacoes que algoritmo naive bayes trabalha muito bem?
 filtros de spam, diagnosticos médicos, classificação de informações textuais, analise de credito, separacao de documentos, previsao de falhas
 
-2.11 quais sao uma das vantagens do algoritmo de naive bayes?
+2.11 quais sao as vantagens do algoritmo de naive bayes?
 rapido e de facil entendimento, pouco esforço computacional, bom desempenho com muito dados, boas previsoes com poucos dados
 
 2.12 quais sao as desvantagens do algoritmo de naive bayes?
