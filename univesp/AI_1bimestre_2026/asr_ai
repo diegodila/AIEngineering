@@ -1,0 +1,35 @@
+1.1 quais os 4 paradigmas de inteligencia?
+humano - pensar como humanos (ciencias cognitivas) - imitar o cerebro
+
+humano - agir como humanos (teste de turing)
+
+racional - pensar racionalmente (logica formal - matematica pura)
+
+racional - agir racionalmente - agente racional (paradigma dominante) 
+
+1.2 quais sao as 3 grandes familias de IA?
+a simbólica, a conexionista e a generativa.
+
+1.3 qual a ordem das familias?
+simbolica (if, else), conexionista (redes neurais), generativa ()
+
+1.4 quais sao os 3 tipos de aprendizado de maquina?
+supervisionado, nao supervisionado, por reforço
+
+1.5 quais caracteristicas do aprendizado supervisionado?
+estudar com gabarito, recebe pares: entrada + saida correta. Ajusta as previsoes para reduzir o erro
+ex: spam/nao spam ; voz + transcricao;
+radiografias laudadas
+
+1.6 quais caracteristicas do aprendizado nao supervisionado?
+organizar sem legenda - recebe dados sem rotulos. Encontra agrupamentos, estruturas ou anomalias
+ex: segmentacao de clientes; anomalias financeiras; topicos em textos
+
+1.7 quais as caracteristicas do aprendizado por reforço?
+tentar, errar e ajustar
+Um agente recebe recompensas ou penalidades e aprende uma política de ação.
+ex: AlphaGo; controle de data centers; RLHF em LLMs.
+
+1.8 o que é inferencia?
+A inferência é o processo de usar um modelo já treinado para responder a uma
+consulta.

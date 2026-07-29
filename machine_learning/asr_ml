@@ -44,8 +44,6 @@ transporte: Identificação de padrões e tendências para rotas de transporte.
 Estatística: Descritiva, Probabilística, Bayesiana e Regressões.
 Álgebra Linear: Vetores e Matrizes, Sistemas Lineares, Estimativa dos mínimos quadrados, transformação linear, autovetores e autovalores.
 Cálculo Multivariado: Funções de várias variáveis, Derivadas Parciais, Integrais Múltiplas, Equações Diferenciais, Geometria Multivariada, Vetor Direcional e GradienteEstatística: Descritiva, Probabilística, Bayesiana e Regressões.
-Álgebra Linear: Vetores e Matrizes, Sistemas Lineares, Estimativa dos mínimos quadrados, transformação linear, autovetores e autovalores.
-Cálculo Multivariado: Funções de várias variáveis, Derivadas Parciais, Integrais Múltiplas, Equações Diferenciais, Geometria Multivariada, Vetor Direcional e Gradiente
 
 1.14 quais sao as formas de apreendizagem de maquina?
 Supervisionada, Não Supervisionada, Aprendizagem por Reforço: 
@@ -127,7 +125,7 @@ não, passamos os atributos e seleciona os melhores
 ele é um dos primeiros algoritmos em machine learning, conhecido com uma classificador probalistico baseado na aplicação do teorema de Bayes
 
 2.09 qual a premissa do algoritmo de naive bayes?
-idependencia entre as variaveis do problema e trabalha muito bem com variaveis categoricas
+independencia entre as variaveis do problema e trabalha muito bem com variaveis categoricas
 
 2.10 quais sao algumas da aplicacoes que algoritmo naive bayes trabalha muito bem?
 filtros de spam, diagnosticos médicos, classificação de informações textuais, analise de credito, separacao de documentos, previsao de falhas
