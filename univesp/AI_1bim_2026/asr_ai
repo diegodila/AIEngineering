@@ -2,7 +2,8 @@
 humano - pensar como humanos (ciencias cognitivas) - imitar o cerebro
 humano - agir como humanos (teste de turing)
 racional - pensar racionalmente (logica formal - matematica pura)
-racional - agir racionalmente - agente racional (paradigma dominante) 
+racional - agir racionalmente - agente racional (paradigma dominante)
+
 
 1.2 quais sao as 3 grandes familias de IA?
 a simbólica, a conexionista e a generativa.
@@ -30,3 +31,24 @@ ex: AlphaGo; controle de data centers; RLHF em LLMs.
 1.8 o que é inferencia?
 A inferência é o processo de usar um modelo já treinado para responder a uma
 consulta.
+
+1.9 dentro do paradigma agir racionalmente quais sao os pilares que eles tem?
+processar informacoes(dados historicos), sensores, agir racionalmente
+
+1.10 o que é AI?
+um sistema de otimizacao matematica
+
+1.11 o que é o teste de turing?
+se o avaliador nao consegue distinguir a maquina do humano, o sistema parece agir como humano, ele mede o comportamento observavel.
+
+1.12 como um vies algoritmico se forma? modelos sao treinados
+dados historicos, treinamento, modelo, decisao, impacto
+
+1.13 quais os problemas que podemos ter com dados historicos?
+o passado ja pode carregar desigualdades.
+
+1.14 como funciona o treinamento?
+o modelo aprende padroes presentes nos dados.
+
+1.15 o que faz o modelo?
+a simplificacao tecnica transforma padroes em previsoes.
