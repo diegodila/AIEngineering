@@ -4,7 +4,6 @@ humano - agir como humanos (teste de turing)
 racional - pensar racionalmente (logica formal - matematica pura)
 racional - agir racionalmente - agente racional (paradigma dominante)
 
-
 1.2 quais sao as 3 grandes familias de IA?
 a simbólica, a conexionista e a generativa.
 
@@ -52,3 +51,58 @@ o modelo aprende padroes presentes nos dados.
 
 1.15 o que faz o modelo?
 a simplificacao tecnica transforma padroes em previsoes.
+
+2.1 qual o conceito de token em ai?
+São pedaços de palavras ou palavras inteiras, Um token nao é uma palavra, ele pode ser uma silaba, um sufixo ou uma pontuação, ou até uma pedaço de uma palavra (metade). Esses pedaços se chamam tokens, e são a única coisa que a máquina lê. Não existe frase inteira lá dentro. Existe uma sequência de fragmentos, e cada fragmento é convertido num conjunto de números que marca a posição dele num mapa enorme de sentidos. Palavras que aparecem em contextos parecidos ficam perto umas das outras nesse mapa. É assim que o modelo relaciona médico e hospital sem que ninguém tenha ensinado medicina a ele.
+um tokenizador é treinado principalmente em ingles. A mesma frase em portugues 
+ex: ana - token 1
+sebastiao - seb(token1) ast(token2) iao(token3)
+
+2.02 um tokenizador geralmente é treinado em qual lingua?
+principalmente em ingles
+
+2.03 um tokenizador é mais caro em outra lingua, por ex: portugues?
+sim, porque ele é quebrado em mais pedaços, a mesma frase em portugues do que ingles, geralmente é bem mais cara, porque gera mais token do que em ingles.
+
+2.04 o que acontece em termos de custos quando temos mais token?
+mais token, mais processamento, gerando mais custos e as vezes menos espaco de contexto.
+
+2.05 depois de picar o texto, qual o contexto entra em acao?
+cada token recebe um endereco, um conjunto de numeros que indica uma posicao em um mapa enorme com centenas de dimensoes. Tokens que aparecem em um contexto parecido ficam proximos nesse mapa, rei e rainha ficam perto um do outro, pizza e macarrao tambem. Eles nao ficaram proximos porque alguem ensinou o modelo que eles se relacionam, ele aprendeu isso observando em que contexto essas palavras aparecem juntas com padrao, estatistica.
+
+embedding (endereco semantico no espaco vetorial)
+
+2.06 quando digitamos um frase, quais as 3 coisas que o modelo ve ao mesmo tempo?
+a frase(texto), os tokens que ela foi quebrada, a posicao de cada token no espaço de significados (embeddings)
+
+2.07 o que é desnaturalizar a tecnologia?
+ver o que interface esconde
+
+2.08 qual a menor unidade que o modelo processa?
+token
+
+2.09 lingues com morfologia mais rica tendem a gerar mais tokens por frase
+
+2.10 depois da tokenizacao o que acontece?
+cada token vira um vetor numerico em um espaco de alta dimensao
+
+2.11 Limite de contexto é limite de tokens?
+sim. Cada interação tem um teto. Quando o contexto estoura, parte da informação precisa ser esquecida.
+
+2.12 o que é o mecanismo self attetion?
+calcula quanto cada token da sequencia deve influenciar os demais.
+ex: o banco esta cheio de dinheiro
+"Dinheiro" ajuda o modelo a entender que "banco" se refere a uma instituição financeira, não a um assento.
+
+2.21 qual o passo a passo de um contexto a plausibilidade estatistica?
+contexto de entrada, mecanismo de atencao, distribuicao de probabilidades, temperatura, plausibilidade =/ veracidade
+
+2.22 porque o transformer mudou a leitura do contexto?
+modelos anteriores processavam tokens em sequencia. A medida que o texto crescia, a influencia de tokens distantes diminuia. O transformer resolveu isso com o mecanismo de atencao: ao processar qualquer token, o modelo considera todos os outros tokens da sequencia e calcula pesos de relevancia.
+
+2.23 qual a diferenca dos modelos sequenciais e o transformer?
+em modelos sequenciais a informacao se perde com a distancia e o processamento sequencial, no transformer todas as relacoes sao consideradas e o processamento rapido e paralelizavel
+
+2.24 Porque identificar que um modelo errou não é suficiente para usá-lo bem?
+ O passo seguinte é entender por que ele errou: foi por plausibilidade estatística, porque a palavra mais frequente não era a correta? Por temperatura alta, porque a distribuição dispersa gerou uma palavra improvável? Por corte de treinamento, porque o fato ocorreu depois? Diagnósticos
+diferentes pedem estratégias de verificação diferentes.
