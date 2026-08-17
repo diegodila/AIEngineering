@@ -1,0 +1,91 @@
+1.1 quais os 4 paradigmas de inteligencia?
+
+
+1.2 quais sao as 3 grandes familias de IA?
+
+
+1.3 qual a ordem das familias?
+
+
+1.4 quais sao os 3 tipos de aprendizado de maquina?
+
+
+1.5 quais caracteristicas do aprendizado supervisionado?
+
+
+1.6 quais caracteristicas do aprendizado nao supervisionado?
+
+
+1.7 quais as caracteristicas do aprendizado por reforço?
+
+
+1.8 o que é inferencia?
+
+
+1.9 dentro do paradigma agir racionalmente quais sao os pilares que eles tem?
+
+
+1.10 o que é AI?
+
+
+1.11 o que é o teste de turing?
+
+
+1.12 como um vies algoritmico se forma? 
+
+
+1.13 quais os problemas que podemos ter com dados historicos?
+
+
+1.14 como funciona o treinamento?
+
+
+1.15 o que faz o modelo?
+
+
+2.01 qual o conceito de token em ai?
+
+
+2.02 um tokenizador geralmente é treinado em qual lingua?
+
+
+2.03 um tokenizador é mais caro em outra lingua, por ex: portugues?
+
+
+2.04 o que acontece em termos de custos quando temos mais token?
+
+
+2.05 depois de picar o texto, qual o contexto entra em acao?
+
+
+2.06 quando digitamos um frase, quais as 3 coisas que o modelo ve ao mesmo tempo?
+
+
+2.07 o que é desnaturalizar a tecnologia?
+
+
+2.08 qual a menor unidade que o modelo processa?
+
+
+2.09 lingues com morfologia mais rica tendem a gerar mais tokens por frase
+
+
+2.10 depois da tokenizacao o que acontece?
+
+
+2.11 Limite de contexto é limite de tokens?
+
+
+2.12 o que é o mecanismo self attetion?
+
+
+2.21 qual o passo a passo de um contexto a plausibilidade estatistica?
+
+
+2.22 porque o transformer mudou a leitura do contexto?
+
+
+2.23 qual a diferenca dos modelos sequenciais e o transformer?
+
+
+2.24 Porque identificar que um modelo errou não é suficiente para usá-lo bem?
