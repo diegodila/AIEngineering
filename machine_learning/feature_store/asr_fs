@@ -1,0 +1,60 @@
+1.1 o que é uma feature store?
+como se fosse uma prateleira de variaveis (tabelas que representam variaveis de alguma entidade) ex: pessoa, cliente, game, transacao, pedido
+
+1.2 o que sao features?
+caracteritiscas, em estatitisca co variaveis
+
+ex:em 2009 pessoa {
+    nome : t
+    estado_civil : solteiro
+    profissao : estudande colegial
+    filhos : 0
+}
+
+em 2011 pessoa {
+    nome : t
+    estado_civil : namorando
+    profissao : atendente de video locadora
+    filhos : 0
+}
+
+
+1.3 quando queremos fazer um modelo preditivo, precisamos olhar para o passado?
+sim, precisamos entender o passado para olhar para o futuro
+
+1.4 como seria uma feature store de pessoa?
+
+| data_da_foto | pessoa | idade | profissao | filhos | estado_civil |
+|---| --- | --- | ---- | --- | --- | 
+
+|data foto     | pessoa    |  idade   | profissao    |   filhos  |    estado_civil |
+| --- | --- | --- | --- | --- | --- |
+|soid     |    sdoi  |     sd|     |     |     |
+|     |     |     |     |     |     |
+|     |     |     |     |     |     |
+|     |     |     |     |     |     |
+
+
+
+1.5 qual o conceito de safra ou cohort?
+safra é o periodo que voce bate a foto
+ex: 2025-07-01 a 00:00
+entao eu tenho uma janela de observacao desse periodo para tras
+e nao necessariamente trabalhamos com uma safra
+ex: 2025-07-01 a 00:00 pegados os dados de 06 meses para tras
+safra 1 pegamos 2025-08-01 os 06 meses para tras e assim por diante
+
+1.6 o que é janela de observacao?
+quanto tempo pra tras voce esta olhando
+
+1.7 o que é maturacao da base?
+é o momento que eu estou definindo minha safra e quanto tempo para frente que eu vou esperar o meu evento de interesse. ex: churn
+
+1.8 porque utilizar uma feature store?
+visao historica por entidade
+facilidade em utilizar novas variaveis em diferentes modelos/contextos 
+governança
+agilidade em deploy 
+
+1.9 qual a diferença de armazenar meus dados historicos em um feature store e fazer uma query no data lake?
+no data lake teriamos que fazer uma query por safra, na feature store temos os dados sumarizados por safra
