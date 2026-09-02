@@ -1,0 +1,48 @@
+1 - deploy de projeto de ml
+
+
+1.1 o que é o appsheet?
+é uma plataforma de deploy padrão
+
+
+2 - criação de repo via plataforma amazonia e deploy de projetos de ml
+
+2.1 o que é necessario para criacao de repositorio?
+É necessário fazer solicitação pelo formulário de MLE.
+
+2.2 em padroes de nomeclatura de projetos como deve ser o nome do projeto?
+deve ser unico e facil de identificar como ciencia de dados
+
+2.3 qual é o padrao de nomeclatura que devemos adotar?
+aa_{cn|cf|cb}_{natura|avon|elo}_{país}_{modelo}
+
+2.4 o que é aa no padrao de nomeclatura?
+aa: advanced analytics
+
+2.5 o que é cn no padrao de nomeclatura?
+cn: consultora natura (termo legado)
+
+2.6 o que é cb no padrao de nomeclatura?
+cb: consultora de beleza (novo padrão)
+
+2.7 o que é cf no padrao de nomeclatura?
+cf: consumidor final
+
+2.8 o que é elo no padrao de nomeclatura?
+elo: união de Natura e Avon
+
+2.9 nesses 3 exemplos o que significa cada um?
+aa_cf_avon_bra_ciclo_vida = advanced analytics consumidor final avon brasil modelo ciclo de vida
+
+aa_cn_natura_mex_behavior = advanced analytics consultora natura natura mexico modelo comportamento
+
+aa_cb_elo_bra_nbo = advanced analytics consultora de beleza elo brasil modelo nbo
+
+2.10 o que acontece apos a submissao do formulario?
+card será criado automaticamente no Jira de MLE - Entrada de Demandas
+
+3 - amazonia plataforma
+
+3.1 o que a plataforma amazonia?
+A Plataforma Amazônia é o principal portal para agilizar seus processos de deploy e CI/CD dentro do seu projeto e/ou produto.
+
