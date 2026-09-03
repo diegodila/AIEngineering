@@ -1,0 +1,18 @@
+1.1 o que é uma feature view?
+Para entender a Feature View na prática, lembre-se de que ela não armazena cópias dos dados. Ela funciona como uma "visão" inteligente (ou consulta salva) que conecta os dados dos Feature Groups ao seu modelo.
+A mágica da Feature View é que ela usa a mesma definição de consulta, mas sabe ler do lugar certo dependendo do seu momento:
+No modo Offline: Ela vai no armazenamento histórico para buscar dados de milhares de pessoas e montar o dataset de treino.
+No modo Online: Ela vai no banco de memória (RonDB) e busca instantaneamente apenas o registro da pessoa que está interagindo no app agora.
+
+1.2 como funciona o modo Online de uma feature group?
+1. No Modo Online: Como ele retorna o último estado pelo ID?
+Quando você faz um .insert() em um Feature Group com online_enabled=True, o Hopsworks grava o dado em dois lugares ao mesmo tempo:
+
+Offline: Salva o histórico acumulado (todas as fotos e versões do dado ao longo do tempo).
+Online: Faz um UPSERT (Update ou Insert) na chave primária pessoa_id.
+No banco Online, existe apenas uma única linha por pessoa_id (a mais recente).
+
+Portanto, quando você roda no modo Online:
+feature_view.get_feature_vector({"pessoa_id": 1001})
+
+Ele faz uma busca simples por chave-valor no banco em memória pelo pessoa_id = 1001. Você não precisa definir data de corte no Online porque esse banco só guarda o estado atual mais recente daquela pessoa.
