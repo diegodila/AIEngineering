@@ -81,7 +81,7 @@ ver o que interface esconde
 2.08 qual a menor unidade que o modelo processa?
 token
 
-2.09 lingues com morfologia mais rica tendem a gerar mais tokens por frase
+2.09 linguas com morfologia mais rica tendem a gerar mais tokens por frase
 
 2.10 depois da tokenizacao o que acontece?
 cada token vira um vetor numerico em um espaco de alta dimensao
@@ -104,7 +104,7 @@ modelos anteriores processavam tokens em sequencia. A medida que o texto crescia
 em modelos sequenciais a informacao se perde com a distancia e o processamento sequencial, no transformer todas as relacoes sao consideradas e o processamento rapido e paralelizavel
 
 2.24 Porque identificar que um modelo errou não é suficiente para usá-lo bem?
- O passo seguinte é entender por que ele errou: foi por plausibilidade estatística, porque a palavra mais frequente não era a correta? Por temperatura alta, porque a distribuição dispersa gerou uma palavra improvável? Por corte de treinamento, porque o fato ocorreu depois? Diagnósticos
+O passo seguinte é entender por que ele errou: foi por plausibilidade estatística, porque a palavra mais frequente não era a correta? Por temperatura alta, porque a distribuição dispersa gerou uma palavra improvável? Por corte de treinamento, porque o fato ocorreu depois? Diagnósticos
 diferentes pedem estratégias de verificação diferentes.
 
 3 - q3 mod 1 Competencias profissionais na era da IA:
