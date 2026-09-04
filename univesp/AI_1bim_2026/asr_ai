@@ -123,3 +123,53 @@ emergentes - competencias novas impulsionadas pela IA - São novas camadas da fo
 
 3.5 dentro do framework o que é diminishing?
 em declinio - perdem a relevancia porque a IA automatiza a rotina
+
+q4 m1 - o que a IA le quando voce aperta enviar?
+
+4.01 qual o contexto de engenharia de prompt e engenharia de contexto?
+Uma ferramenta de IA não sabe. Ela só tem o que está escrito na janela, e nada além disso. Este módulo separa duas coisas que costumam ser tratadas como uma só. A instrução que você escreve por último é o prompt. Tudo que está junto dela na janela, inclusive o que você nunca escreveu porque achou óbvio, é o contexto. Prompt é a ponta. Contexto é o resto.
+
+4.02 quais sao os 4 componentes que fazem uma instrução funcionar?
+(papel, objetivo, restrições e formato)
+
+4.03 o que acontece quando um contexto nao esta estruturado?
+o modelo preenche com o que ele achar mais provavel
+
+4.04 quantos componentes tem um contexto?
+4 componentes
+
+4.05 o que é o componente papel?
+quem o modelo deve simular como interlocutor
+ele defini vocabulario, nivel de tecnicidade
+
+4.06 o que é o componente objetivo?
+o que o output precisa fazer, nao apenas o assunto a diferenca entre escreva sobre x e escreva um texto que faça y entender z
+
+4.07 o que é o compenente restricoes?
+o que o output do modelo nao pode fazer,
+limite de tamanho, tom proibido, normas a seguir, restricoes bem definidas
+
+4.08 o que é o componente formato?
+como o output do modelo deve ser apresentado, paragrafo corrido, lista, email, mensagem curta
+
+4.09 o que forma o contexto real que o modelo processa?
+os 4 componentes
+
+4.10 faça um exemplo sem nenhum dos 4 componentes?
+"me ajuda a escrever uma mensagem pedindo mais prazo para o meu professor."
+
+4.11 faça um exemplo com o uso dos 4 componentes?
+papel: assistente de comunicação academica.
+objetivo: pedir prorrogação sem soar com desculpa excessiva.
+restrições: até cinco linhas, tom respeitoso, mas direto; sem pedidos de desculpa repetidos.
+formato: mensagem de texto, sem saudação formal.
+"Mensagem objetiva em quatro linhas, tom respeitoso e direto, sem desculpas excessivas, adequada para o envio real."
+
+4.12 de um exemplo de contexto simples de comprar pao?
+um bilhete na geladeira: compra pao 
+na casa de quem escreveu ja esta claro:
+ja sabe qual a padaria, ja sabe qual o tipode de pao, ja sabe par quantas pessoas, ja sabe que o pedido vale para hoje
+para quem esta de fora: precisa adivinhar o contexto, preenche lacunas com caso mais comum
+pode acertar so em parte, corre o risco de errar o que era especifico
+
+4.13 
