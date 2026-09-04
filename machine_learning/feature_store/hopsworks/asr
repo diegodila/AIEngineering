@@ -16,3 +16,15 @@ Portanto, quando você roda no modo Online:
 feature_view.get_feature_vector({"pessoa_id": 1001})
 
 Ele faz uma busca simples por chave-valor no banco em memória pelo pessoa_id = 1001. Você não precisa definir data de corte no Online porque esse banco só guarda o estado atual mais recente daquela pessoa.
+
+
+1.3 como eu faço para ter um ordem temporal definida na escrita de uma feature group?
+declarando uma coluna de timestamp/date como event_time ao criar uma feature group
+
+fg_cadeira = fs.get_or_create_feature_group(
+    name="pessoa_comportamento_cadeira",
+    version=3, 
+    primary_key=["pessoa_id"],
+    event_time="timestamp", #DEFINE A ORDEM TEMPORAL
+    online_enabled=True
+)
