@@ -172,4 +172,13 @@ ja sabe qual a padaria, ja sabe qual o tipode de pao, ja sabe par quantas pessoa
 para quem esta de fora: precisa adivinhar o contexto, preenche lacunas com caso mais comum
 pode acertar so em parte, corre o risco de errar o que era especifico
 
-4.13 
+4.13 como pode ser chamado o componente de contexto?
+instrucoes de contexto, 
+
+4.14 dentro do componente papel no contexto, se ele nao garante uma taxa maior de acerto, o que ele garante?
+O Papel escolhe as palavras e as convenções, e nisso ele é muito bom. Peça a mesma explicação sobre um atraso de entrega “para a coordenação do curso” e depois
+“para um colega de grupo”. Você recebe dois textos diferentes em formalidade, em extensão e em escolha de vocabulário. Os dois podem estar corretos nos fatos. Só um serve para a pessoa que vai receber.
+
+4.15 qual a principal diferenca entre engenharia de prompt e de contexto?
+Engenharia de prompt é construir bem a instrução. Engenharia de contexto é
+decidir o que entra na janela, e o que fica de fora.
