@@ -1,0 +1,292 @@
+tenho esse contexto de teste coedados-platform-ml-symbio/tests/1.0.1/domain/feature_store/test_feature_view.py:
+
+# ── get_feature_vector ────────────────────────────────────────────────────────
+
+
+@pytest.mark.gaed_10883
+@pytest.mark.parametrize(
+    # Arrange
+    'entry, passed_features, expected_response',
+    [
+        ({'customer_id': 123},
+         {'amount': 5000},
+         {'customer_id': 123, 'amount': 5000}),
+        ({'customer_id': 123, 'id_pais': 'Brasil'},
+                 {'amount': 5000},
+                 {'customer_id': 123, 'id_pais': 'Brasil', 'amount': 5000})
+    ]
+)
+def test_get_feature_vector_returns_combined_features(
+    feature_view_online,
+    entry,
+    passed_features,
+    expected_response,
+):
+    """
+    Verifica o get_feature_vector() retorna features atraves do entry e passed_features.
+    """
+    # Act
+    try:
+        response = feature_view_online.get_feature_vector(entry, passed_features)
+    except FeatureViewError:
+        pytest.xfail()
+
+    # Assert
+    assert response == expected_response
+    
+
+@pytest.mark.gaed_10883
+@pytest.mark.parametrize(
+    # Arrange
+    'entry, passed_features, expected_response',
+    [
+        ([{'customer_id': 123}, 
+          {'customer_id': 234}],
+         [{'amount': 5000}, {'amount': 6000}],
+         [{'customer_id': 123, 'amount': 5000},
+          {'customer_id': 234, 'amount': 6000}]),
+        ([{'customer_id': 123, 'id_pais': 'Brasil'}, 
+                  {'customer_id': 234, 'id_pais': 'Argentina'}],
+                 [{'amount': 5000}, {'amount': 6000}],
+                 [{'customer_id': 123, 'id_pais': 'Brasil', 'amount': 5000},
+                  {'customer_id': 234, 'id_pais': 'Argentina', 'amount': 6000}])
+    ]
+)
+def test_get_feature_vectors_returns_combined_features(
+    feature_view_online,
+    entry,
+    passed_features,
+    expected_response,
+):
+    """
+    Verifica o get_feature_vectors() retorna uma lista de features atraves do entry e passed_features.
+    """
+    # Act
+    try:
+        response = feature_view_online.get_feature_vectors(entry, passed_features)
+    except FeatureViewError:
+        pytest.xfail()
+    
+    # Assert
+    assert response == expected_response
+
+
+@pytest.mark.gaed_10885
+def test_get_feature_vector_with_not_valid_entry_raises_featureview_error(
+    feature_view_online
+):
+    """
+    Verifica o levantamento de exceção (FeatureViewError) passando um entry ou passed_features incorretos ao get_feature_vector().
+    """
+    # Arrange
+    entry = {'customer_id': 123}
+    passed_features = {'amount':5000}
+    
+    # Act / Assert
+    with pytest.raises(FeatureViewError,match='id_pais'):
+        feature_view_online.get_feature_vector(entry,passed_features)
+        
+
+@pytest.mark.gaed_10885
+def test_get_feature_vectors_with_not_valid_entry_raises_featureview_error(
+    feature_view_online
+):
+    """
+    Verifica o levantamento de exceção (FeatureViewError) passando um entry ou passed_features incorretos ao get_feature_vectors().
+    """
+    # Arrange
+    entry = [{'customer_id': 123},{'customer_id': 234}]
+    passed_features = [{'amount': 5000},{'amount': 5001}]
+    
+    # Act / Assert
+    with pytest.raises(FeatureViewError,match='id_pais'):
+        feature_view_online.get_feature_vectors(entry,passed_features)
+
+
+@pytest.mark.gaed_10885
+def test_get_feature_vector_with_unknown_entry_raises_featureview_error(
+    feature_view_online
+):
+    """
+    Verifica o levantamento de exceção (FeatureViewError) passando um entry ou passed_features incorretos ao get_feature_vector().
+    """
+    # Arrange
+    entry = {'customer_id': 123, 'id_pais': 'Brasil', 'unknown': 234}
+    passed_features = {'amount':5000}
+    
+    # Act / Assert
+    with pytest.raises(FeatureViewError,match='unknown'):
+        feature_view_online.get_feature_vector(entry,passed_features)
+        
+        
+@pytest.mark.gaed_10885
+def test_get_feature_vector_with_unknown_feature_raises_featureview_error(
+    feature_view_online
+):
+    """
+    Verifica o levantamento de exceção (FeatureViewError) passando um entry ou passed_features incorretos ao get_feature_vector().
+    """
+    # Arrange
+    entry = {'customer_id': 123, 'id_pais': 'Brasil'}
+    passed_features = {'unknown_feature': 5000}
+    
+    # Act / Assert
+    with pytest.raises(FeatureViewError,match='unknown_feature'):
+        feature_view_online.get_feature_vector(entry,passed_features)
+
+
+e esse contexto na featureview coedados-platform-ml-symbio/symbio/1.0.1/domain/feature_store/feature_view.py:
+    
+ def _validate_entry(
+        self,
+        entry: Dict[str, Any],
+        passed_features:  Dict[str, Any]
+    ) -> None:
+        
+        feature_groups_keys = [fg.primary_keys for fg in self.query.feature_groups]
+        feature_groups_keys = [pk for pks in feature_groups_keys for pk in pks]
+        
+        missing_keys = [key for key in feature_groups_keys if key not in entry.keys()]
+        if len(missing_keys) > 0:
+            raise exceptions.FeatureViewError(f'Chaves primárias: {missing_keys} não encontrada(s) na Query.')
+        
+        unknown_keys = [key for key in entry.keys() if key not in feature_groups_keys]
+        if len(unknown_keys) > 0:
+            raise exceptions.FeatureViewError(f'Chaves primárias informadas: {unknown_keys} não encontrada(s) na Feature View.')
+        
+        feature_groups_features = list(itertools.chain.from_iterable(
+            [fg.features for fg in self.query.feature_groups]))
+        unknown_features = [f for f in passed_features.keys() if f not in feature_groups_features]
+        if len(unknown_features) > 0:
+            raise exceptions.FeatureViewError(f'Features informadas: {unknown_features} não encontrada(s) na Query.')
+        
+
+            
+    def _fetch_features(self,entry) -> Dict[str, Any]:
+        return {}
+
+    def get_feature_vector(
+        self,
+        entry: Dict[str, Any],
+        passed_features: Optional[Dict[str, Any]]=None,
+    ) -> List[Any]:
+        """
+        Recupera o vetor de features mais recente para uma única entidade.
+
+        Destinado a integrações de inferência online (real-time serving),
+        onde o modelo precisa das features mais atuais para uma entidade
+        pontual.
+
+        O método garante consistência de tipos com o dataset de treino,
+        mitigando offline-online skew: as mesmas FeatureLookups usadas
+        em get_training_data() são reutilizadas na busca online.
+
+        Args:
+            entry: Um dicionário de primary keys de feature group e seus
+             valores informados pela aplicação.
+            passed_features: Um dicionário de valores de features informados
+             pela aplicação durante o momento de execução. Eles podem substituir
+             valores de features vindos da feature store assim como gerar valores
+             de features que não estão disponíveis na feature store.
+
+        Returns:
+            Retorna uma lista contendo valores de features relacionados a primary
+             keys informadas, ordenadas de acordo com a posição das suas features
+             na query da feature view.
+
+        Raises:
+            FeatureViewError: Quando as primary keys não forem encontradas nos
+             features groups informados na feature view
+             
+
+        Example:
+            >>> vetor = view.get_feature_vector(
+            ...     entity_row={'id_cliente': 12345})
+            >>> predicao = modelo.predict([list(vetor.values())])
+        """
+        feature_groups_keys = [fg.primary_keys for fg in self.query.feature_groups]
+        feature_groups_keys = [pk for pks in feature_groups_keys for pk in pks]
+        
+        self._validate_entry(entry, passed_features)
+        
+        fetched_features = self._fetch_features(entry)
+        features = {**entry,**fetched_features,**passed_features}
+        return features
+    
+    def get_feature_vectors(
+        self,
+        entry: List[Dict[str, Any]],
+        passed_features: Optional[List[Dict[str, Any]]]=None,
+    ) -> List[List[Any]]:
+        """
+        Recupera os vetores de features mais recente para uma única entidade.
+
+        Destinado a integrações de inferência online (real-time serving),
+        onde o modelo precisa das features mais atuais para uma entidade
+        pontual.
+
+        O método garante consistência de tipos com o dataset de treino,
+        mitigando offline-online skew: as mesmas FeatureLookups usadas
+        em get_training_data() são reutilizadas na busca online.
+
+        Args:
+            entry: Uma lista de dicionário de primary keys 
+                de feature group e seus valores informados pela aplicação.
+            passed_features: Uma lista de dicionário de valores 
+                de features informados pela aplicação durante o momento de execução. Eles podem     substituir valores de features vindos da feature store assim como gerar valores de features que não estão disponíveis na feature store.
+
+        Returns:
+            Retorna uma lista contendo valores de features 
+                relacionados a primary keys informadas, ordenadas de acordo com a posição das suas features na query da feature view.
+             
+
+        Example:
+            >>> vetors = view.get_feature_vectors(
+            ...     entry=[{'id_cliente': 12345}, {'id': "Brasil"}])
+            >>> predicao = modelo.predict([list(vetors.values())])
+        """        
+        features_list = []
+        for idx in range(len(entry)):
+            features_list.append(self.get_feature_vector(entry[idx], passed_features[idx]))
+        return features_list
+    
+foram desenvolvidas com os codigos acima essas 3 tarefas:
+    TC-GAED-10885-001 - Chave obrigatória ausente
+
+Prioridade: P0
+Tipo: unitário negativo
+Pré-condição: FeatureView simples disponível.
+
+Resultado esperado:
+Erro de contrato antes de qualquer leitura.
+
+
+
+
+TC-GAED-10885-002 - Chave desconhecida
+
+Prioridade: P0
+Tipo: unitário negativo
+Pré-condição: FeatureView simples disponível.
+
+Resultado esperado:
+unknown_key é rejeitada com mensagem acionável.
+
+
+TC-GAED-10885-003 - Feature desconhecida
+
+Prioridade: P0
+Tipo: unitário negativo
+Pré-condição: FeatureView simples disponível.
+
+Resultado esperado:
+
+agora o ponto chave com a premissa de documentacoes do hopsworks  e fazendo um passo a passo simples o que seria:
+    TC-GAED-10885-005 - Proteção de primary key e event time
+
+Prioridade: P0
+Tipo: unitário negativo
+Pré-condição: FeatureView simples disponível.
+
+Resultado esperado:
+passed_features não altera customer_id nem event_time.
