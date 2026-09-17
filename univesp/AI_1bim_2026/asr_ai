@@ -184,4 +184,43 @@ Engenharia de prompt é construir bem a instrução. Engenharia de contexto é
 decidir o que entra na janela, e o que fica de fora.
 
 4.16 o que é decompor?
-identificar a funcao de cada informacao
+identificar a funcao de cada informacao.  identificar a função de cada informação que você já tem sobre a tarefa e colocá-la no componente correspondente. Quatro perguntas dão conta do serviço: quem deve
+responder, o que a resposta precisa fazer, o que ela não pode fazer, como ela deve ser apresentada. Quem decompõe organiza a informação que já tem e escreve a que ficou implícita
+
+4.17 em decomposicao quais perguntas podemos fazer para os 4 componentes?
+quem responde - papel
+o que precisa ser feito - objetivo
+o que nao pode acontecer - restricoes
+como a resposta deve sair - formato 
+
+4.18 quais sao os limites estruturais do modelo?
+limite de janela
+limite de dominio
+limite de verificacao
+
+4.20 o que é o limite de janela?
+o modelo so processa o que esta na conversa. o modelo nao tem acesso ao que nao 
+foi enviado
+
+4.21 o que é o limite de dominio?
+os modelos tem bom desempenho em tarefas que apareceram com frequencia no corpus 
+de dominio. Tarefa fora da distribuicao de treinamento tem desempenho 
+imprevisivel em tarefas raras ou pouco frequentes
+
+4.22 o que é o limite de verificacao?
+o estudante nao tem dominio para distiguir o certo do errado
+
+4.23 o que podemos cortar para o limite de janela?
+conversa antiga sem relacao
+documento inteiro desnecessario
+anexo irrelevantes
+detalhes repetidos
+
+4.24 como podemos fazer para mitigar os 3 limites, janela, verificacao e 
+dominio?
+escreva três linhas num
+papel ou numa nota do celular. Primeira: o que esta tarefa exige e ainda não 
+está escrito em lugar nenhum. Segunda: qual parte disto é assunto pouco 
+documentado, que eu vou precisar conferir na origem. Terceira, em duas colunas 
+curtas: o que eu consigo julgar sozinho
+no resultado e o que eu não consigo. 
