@@ -14,12 +14,14 @@ simbolica (if, else), conexionista (redes neurais), generativa ()
 supervisionado, nao supervisionado, por reforço
 
 1.5 quais caracteristicas do aprendizado supervisionado?
-estudar com gabarito, recebe pares: entrada + saida correta. Ajusta as previsoes para reduzir o erro
+estudar com gabarito, recebe pares: entrada + saida correta. Ajusta as previsoes 
+para reduzir o erro
 ex: spam/nao spam ; voz + transcricao;
 radiografias laudadas
 
 1.6 quais caracteristicas do aprendizado nao supervisionado?
-organizar sem legenda - recebe dados sem rotulos. Encontra agrupamentos, estruturas ou anomalias
+organizar sem legenda - recebe dados sem rotulos. Encontra agrupamentos, 
+estruturas ou anomalias
 ex: segmentacao de clientes; anomalias financeiras; topicos em textos
 
 1.7 quais as caracteristicas do aprendizado por reforço?
@@ -38,7 +40,8 @@ processar informacoes(dados historicos), sensores, agir racionalmente
 um sistema de otimizacao matematica
 
 1.11 o que é o teste de turing?
-se o avaliador nao consegue distinguir a maquina do humano, o sistema parece agir como humano, ele mede o comportamento observavel.
+se o avaliador nao consegue distinguir a maquina do humano, o sistema parece 
+agir como humano, ele mede o comportamento observavel.
 
 1.12 como um vies algoritmico se forma? modelos sao treinados
 dados historicos, treinamento, modelo, decisao, impacto
@@ -53,7 +56,14 @@ o modelo aprende padroes presentes nos dados.
 a simplificacao tecnica transforma padroes em previsoes.
 
 2.1 qual o conceito de token em ai?
-São pedaços de palavras ou palavras inteiras, Um token nao é uma palavra, ele pode ser uma silaba, um sufixo ou uma pontuação, ou até uma pedaço de uma palavra (metade). Esses pedaços se chamam tokens, e são a única coisa que a máquina lê. Não existe frase inteira lá dentro. Existe uma sequência de fragmentos, e cada fragmento é convertido num conjunto de números que marca a posição dele num mapa enorme de sentidos. Palavras que aparecem em contextos parecidos ficam perto umas das outras nesse mapa. É assim que o modelo relaciona médico e hospital sem que ninguém tenha ensinado medicina a ele.
+São pedaços de palavras ou palavras inteiras, Um token nao é uma palavra, ele 
+pode ser uma silaba, um sufixo ou uma pontuação, ou até uma pedaço de uma 
+palavra (metade). Esses pedaços se chamam tokens, e são a única coisa que a 
+máquina lê. Não existe frase inteira lá dentro. Existe uma sequência de 
+fragmentos, e cada fragmento é convertido num conjunto de números que marca a 
+posição dele num mapa enorme de sentidos. Palavras que aparecem em contextos 
+parecidos ficam perto umas das outras nesse mapa. É assim que o modelo relaciona 
+médico e hospital sem que ninguém tenha ensinado medicina a ele.
 um tokenizador é treinado principalmente em ingles. A mesma frase em portugues 
 ex: ana - token 1
 sebastiao - seb(token1) ast(token2) iao(token3)
@@ -62,18 +72,27 @@ sebastiao - seb(token1) ast(token2) iao(token3)
 principalmente em ingles
 
 2.03 um tokenizador é mais caro em outra lingua, por ex: portugues?
-sim, porque ele é quebrado em mais pedaços, a mesma frase em portugues do que ingles, geralmente é bem mais cara, porque gera mais token do que em ingles.
+sim, porque ele é quebrado em mais pedaços, a mesma frase em portugues do que 
+ingles, geralmente é bem mais cara, porque gera mais token do que em ingles.
 
 2.04 o que acontece em termos de custos quando temos mais token?
-mais token, mais processamento, gerando mais custos e as vezes menos espaco de contexto.
+mais token, mais processamento, gerando mais custos e as vezes menos espaco de 
+contexto.
 
 2.05 depois de picar o texto, qual o contexto entra em acao?
-cada token recebe um endereco, um conjunto de numeros que indica uma posicao em um mapa enorme com centenas de dimensoes. Tokens que aparecem em um contexto parecido ficam proximos nesse mapa, rei e rainha ficam perto um do outro, pizza e macarrao tambem. Eles nao ficaram proximos porque alguem ensinou o modelo que eles se relacionam, ele aprendeu isso observando em que contexto essas palavras aparecem juntas com padrao, estatistica.
+cada token recebe um endereco, um conjunto de numeros que indica uma posicao 
+em um mapa enorme com centenas de dimensoes. Tokens que aparecem em um contexto 
+parecido ficam proximos nesse mapa, rei e rainha ficam perto um do outro, pizza 
+e macarrao tambem. Eles nao ficaram proximos porque alguem ensinou o modelo que 
+eles se relacionam, ele aprendeu isso observando em que contexto essas palavras 
+aparecem juntas com padrao, estatistica.
 
 embedding (endereco semantico no espaco vetorial)
 
-2.06 quando digitamos um frase, quais as 3 coisas que o modelo ve ao mesmo tempo?
-a frase(texto), os tokens que ela foi quebrada, a posicao de cada token no espaço de significados (embeddings)
+2.06 quando digitamos um frase, quais as 3 coisas que o modelo ve ao mesmo 
+tempo?
+a frase(texto), os tokens que ela foi quebrada, a posicao de cada token no 
+espaço de significados (embeddings)
 
 2.07 o que é desnaturalizar a tecnologia?
 ver o que interface esconde
@@ -87,39 +106,54 @@ token
 cada token vira um vetor numerico em um espaco de alta dimensao
 
 2.11 Limite de contexto é limite de tokens?
-sim. Cada interação tem um teto. Quando o contexto estoura, parte da informação precisa ser esquecida.
+sim. Cada interação tem um teto. Quando o contexto estoura, parte da informação 
+precisa ser esquecida.
 
 2.12 o que é o mecanismo self attetion?
 calcula quanto cada token da sequencia deve influenciar os demais.
 ex: o banco esta cheio de dinheiro
-"Dinheiro" ajuda o modelo a entender que "banco" se refere a uma instituição financeira, não a um assento.
+"Dinheiro" ajuda o modelo a entender que "banco" se refere a uma instituição 
+financeira, não a um assento.
 
 2.21 qual o passo a passo de um contexto a plausibilidade estatistica?
-contexto de entrada, mecanismo de atencao, distribuicao de probabilidades, temperatura, plausibilidade =/ veracidade
+contexto de entrada, mecanismo de atencao, distribuicao de probabilidades, 
+temperatura, plausibilidade =/ veracidade
 
 2.22 porque o transformer mudou a leitura do contexto?
-modelos anteriores processavam tokens em sequencia. A medida que o texto crescia, a influencia de tokens distantes diminuia. O transformer resolveu isso com o mecanismo de atencao: ao processar qualquer token, o modelo considera todos os outros tokens da sequencia e calcula pesos de relevancia.
+modelos anteriores processavam tokens em sequencia. A medida que o texto 
+crescia, a influencia de tokens distantes diminuia. O transformer resolveu isso 
+com o mecanismo de atencao: ao processar qualquer token, o modelo considera 
+todos os outros tokens da sequencia e calcula pesos de relevancia.
 
 2.23 qual a diferenca dos modelos sequenciais e o transformer?
-em modelos sequenciais a informacao se perde com a distancia e o processamento sequencial, no transformer todas as relacoes sao consideradas e o processamento rapido e paralelizavel
+em modelos sequenciais a informacao se perde com a distancia e o processamento 
+sequencial, no transformer todas as relacoes sao consideradas e o processamento 
+rapido e paralelizavel
 
 2.24 Porque identificar que um modelo errou não é suficiente para usá-lo bem?
-O passo seguinte é entender por que ele errou: foi por plausibilidade estatística, porque a palavra mais frequente não era a correta? Por temperatura alta, porque a distribuição dispersa gerou uma palavra improvável? Por corte de treinamento, porque o fato ocorreu depois? Diagnósticos
+O passo seguinte é entender por que ele errou: foi por plausibilidade 
+estatística, porque a palavra mais frequente não era a correta? Por temperatura 
+alta, porque a distribuição dispersa gerou uma palavra improvável? Por corte de 
+treinamento, porque o fato ocorreu depois? Diagnósticos
 diferentes pedem estratégias de verificação diferentes.
 
 3 - q3 mod 1 Competencias profissionais na era da IA:
 
-3.1 quais sao os frameworks das 4 categorias que avalia o impacto da IA em 4 competencias.
+3.1 quais sao os frameworks das 4 categorias que avalia o impacto da IA em 
+4 competencias.
 enduring - evolving - emerging - diminishing
 
 3.2 dentro do framework o que é enduring?
-duradouras - permanecem criticas e se tornam ainda mais importantes - A IA não diminui seu valor. Em muitos casos, ela o aumenta.
+duradouras - permanecem criticas e se tornam ainda mais importantes - A IA não 
+diminui seu valor. Em muitos casos, ela o aumenta.
 
 3.3 dentro do framework o que é evolving?
-em evolucao - continuam essenciais, mas mudam de forma - A habilidade continua essencial, mas a forma de praticá-la muda.
+em evolucao - continuam essenciais, mas mudam de forma - A habilidade continua 
+essencial, mas a forma de praticá-la muda.
 
 3.4 dentro do framework o que é emerging?
-emergentes - competencias novas impulsionadas pela IA - São novas camadas da formação profissional na era da IA.
+emergentes - competencias novas impulsionadas pela IA - São novas camadas da 
+formação profissional na era da IA.
 
 3.5 dentro do framework o que é diminishing?
 em declinio - perdem a relevancia porque a IA automatiza a rotina
@@ -127,7 +161,11 @@ em declinio - perdem a relevancia porque a IA automatiza a rotina
 q4 m1 - o que a IA le quando voce aperta enviar?
 
 4.01 qual o contexto de engenharia de prompt e engenharia de contexto?
-Uma ferramenta de IA não sabe. Ela só tem o que está escrito na janela, e nada além disso. Este módulo separa duas coisas que costumam ser tratadas como uma só. A instrução que você escreve por último é o prompt. Tudo que está junto dela na janela, inclusive o que você nunca escreveu porque achou óbvio, é o contexto. Prompt é a ponta. Contexto é o resto.
+Uma ferramenta de IA não sabe. Ela só tem o que está escrito na janela, e nada 
+além disso. Este módulo separa duas coisas que costumam ser tratadas como uma 
+só. A instrução que você escreve por último é o prompt. Tudo que está junto dela 
+na janela, inclusive o que você nunca escreveu porque achou óbvio, é o contexto. 
+Prompt é a ponta. Contexto é o resto.
 
 4.02 quais sao os 4 componentes que fazem uma instrução funcionar?
 (papel, objetivo, restrições e formato)
@@ -143,14 +181,16 @@ quem o modelo deve simular como interlocutor
 ele defini vocabulario, nivel de tecnicidade
 
 4.06 o que é o componente objetivo?
-o que o output precisa fazer, nao apenas o assunto a diferenca entre escreva sobre x e escreva um texto que faça y entender z
+o que o output precisa fazer, nao apenas o assunto a diferenca entre escreva 
+sobre x e escreva um texto que faça y entender z
 
 4.07 o que é o compenente restricoes?
 o que o output do modelo nao pode fazer,
 limite de tamanho, tom proibido, normas a seguir, restricoes bem definidas
 
 4.08 o que é o componente formato?
-como o output do modelo deve ser apresentado, paragrafo corrido, lista, email, mensagem curta
+como o output do modelo deve ser apresentado, paragrafo corrido, lista, email, 
+mensagem curta
 
 4.09 o que forma o contexto real que o modelo processa?
 os 4 componentes
@@ -161,31 +201,42 @@ os 4 componentes
 4.11 faça um exemplo com o uso dos 4 componentes?
 papel: assistente de comunicação academica.
 objetivo: pedir prorrogação sem soar com desculpa excessiva.
-restrições: até cinco linhas, tom respeitoso, mas direto; sem pedidos de desculpa repetidos.
+restrições: até cinco linhas, tom respeitoso, mas direto; sem pedidos de 
+desculpa repetidos. 
 formato: mensagem de texto, sem saudação formal.
-"Mensagem objetiva em quatro linhas, tom respeitoso e direto, sem desculpas excessivas, adequada para o envio real."
+"Mensagem objetiva em quatro linhas, tom respeitoso e direto, sem desculpas 
+excessivas, adequada para o envio real."
 
 4.12 de um exemplo de contexto simples de comprar pao?
 um bilhete na geladeira: compra pao 
 na casa de quem escreveu ja esta claro:
-ja sabe qual a padaria, ja sabe qual o tipode de pao, ja sabe par quantas pessoas, ja sabe que o pedido vale para hoje
-para quem esta de fora: precisa adivinhar o contexto, preenche lacunas com caso mais comum
-pode acertar so em parte, corre o risco de errar o que era especifico
+ja sabe qual a padaria, ja sabe qual o tipode de pao, ja sabe par quantas 
+pessoas, ja sabe que o pedido vale para hoje para quem esta de fora: precisa 
+adivinhar o contexto, preenche lacunas com caso mais comum pode acertar so em 
+parte, corre o risco de errar o que era especifico
 
 4.13 como pode ser chamado o componente de contexto?
 instrucoes de contexto, 
 
-4.14 dentro do componente papel no contexto, se ele nao garante uma taxa maior de acerto, o que ele garante?
-O Papel escolhe as palavras e as convenções, e nisso ele é muito bom. Peça a mesma explicação sobre um atraso de entrega “para a coordenação do curso” e depois
-“para um colega de grupo”. Você recebe dois textos diferentes em formalidade, em extensão e em escolha de vocabulário. Os dois podem estar corretos nos fatos. Só um serve para a pessoa que vai receber.
+4.14 dentro do componente papel no contexto, se ele nao garante uma taxa maior 
+de acerto, o que ele garante?
+O Papel escolhe as palavras e as convenções, e nisso ele é muito bom. Peça a 
+mesma explicação sobre um atraso de entrega “para a coordenação do curso” e 
+depois “para um colega de grupo”. Você recebe dois textos diferentes em 
+formalidade, em extensão e em escolha de vocabulário. Os dois podem estar 
+corretos nos fatos. Só um serve para a pessoa que vai receber.
 
 4.15 qual a principal diferenca entre engenharia de prompt e de contexto?
 Engenharia de prompt é construir bem a instrução. Engenharia de contexto é
 decidir o que entra na janela, e o que fica de fora.
 
 4.16 o que é decompor?
-identificar a funcao de cada informacao.  identificar a função de cada informação que você já tem sobre a tarefa e colocá-la no componente correspondente. Quatro perguntas dão conta do serviço: quem deve
-responder, o que a resposta precisa fazer, o que ela não pode fazer, como ela deve ser apresentada. Quem decompõe organiza a informação que já tem e escreve a que ficou implícita
+identificar a funcao de cada informacao.  identificar a função de cada 
+informação que você já tem sobre a tarefa e colocá-la no componente 
+correspondente. Quatro perguntas dão conta do serviço: quem deve
+responder, o que a resposta precisa fazer, o que ela não pode fazer, como ela 
+deve ser apresentada. Quem decompõe organiza a informação que já tem e escreve 
+a que ficou implícita
 
 4.17 em decomposicao quais perguntas podemos fazer para os 4 componentes?
 quem responde - papel
@@ -223,4 +274,4 @@ papel ou numa nota do celular. Primeira: o que esta tarefa exige e ainda não
 está escrito em lugar nenhum. Segunda: qual parte disto é assunto pouco 
 documentado, que eu vou precisar conferir na origem. Terceira, em duas colunas 
 curtas: o que eu consigo julgar sozinho
-no resultado e o que eu não consigo. 
+no resultado e o que eu não consigo.
