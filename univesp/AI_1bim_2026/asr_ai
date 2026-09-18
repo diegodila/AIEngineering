@@ -275,3 +275,55 @@ está escrito em lugar nenhum. Segunda: qual parte disto é assunto pouco
 documentado, que eu vou precisar conferir na origem. Terceira, em duas colunas 
 curtas: o que eu consigo julgar sozinho
 no resultado e o que eu não consigo.
+
+q4 m4
+4.25 quais 3 criterios objetivos para avaliar um output que podemos usar?
+titulo ate 120 caracteres
+corpo ate 300 caracteres
+tom neutro sem liguagem de urgencia
+sao criterios verificaveis
+temos que ter os 4 componentes ativos
+onde esse esses criterios acima entram no componente restricoes
+
+4.26 quando uma resposta nao esta adequada o que devemos fazer para melhorar
+a estrategia nao é refazer tudo do zero e tentar de novo e sim iterar
+
+4.27 quando usamos a estrategia de reescrever uma resposta que ficou ruim e 
+tentamos de novo quais os passos que utilizamos?
+reescrever por intuicao, nao verificar a falha, misturar mudancas demais,
+pode melhorar sem explicar por quê
+
+4.28 quando usamos a estrategia de reescrever uma resposta que ficou ruim e 
+iteramos quais os passos que utilizamos?
+define critérios antes, avalia o resultado, diagnostica a causa, muda uma peça 
+por vez
+
+4.29 como definimos um criterio util?
+devem ser visiveis no resultado, precisam ser faceis de conferir, podem virar
+checklist, escreva só o que você sabe avaliar
+
+4.30 como descobrir qual componente causou falha?
+quando o resultado...
+veio longo demais - restricoes
+responde outra pergunta - objetivo
+soa estranho para quem vai receber - papel
+traz conteudo certo na forma errada - formato
+
+4.31 quais regras do componentes podemos usar para conferir o resultado?
+papel - quem voce quer que a IA seja ao responder (especialista, analista, 
+mentor, revisor)
+restricoes - limites, criterios, regras e condicoes que a resposta deve 
+respeitar
+formato - como a resposta deve ser organizada e apresentada
+objetivo - o que deve ser entregue e para que serve
+
+4.32 por que a IA nao se corrige sozinha o que ela mesma escreveu?
+sem criterio externo, revisar pode piorar. em estudo apresentado: quanto mais o 
+modelo se revisa sozinho, mais o desempenho cai. A revisao funciona melhor 
+quando o criterio vem de fora
+
+4.33 qual é o ciclo de iterar em uma respota que veio errada?
+produzir - avaliar - dianosticar e revisar
+Iterar é saber, ao fim de cada rodada, qual peça você trocou.
+
+4.34 
