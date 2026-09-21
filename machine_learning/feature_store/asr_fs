@@ -58,3 +58,45 @@ agilidade em deploy
 
 1.9 qual a diferença de armazenar meus dados historicos em um feature store e fazer uma query no data lake?
 no data lake teriamos que fazer uma query por safra, na feature store temos os dados sumarizados por safra
+
+symbio and hopsworks
+
+2.10 o que é arquitetura fti?
+
+2.11 quantos pipelines eu tenho na arquitetura fti?
+3 pipelines, pipeline de feature, pipeline de treinamento, pipeline de
+inferencia
+
+2.12 o que é o pipeline de feature?
+transforma dados em features e labels e envia isso para feature store
+
+2.13 o que é o pipeline de treinamento?
+treina modelos com features e labels
+
+2.14 o que é o pipeline de inferencia?
+ele consome modelos e consome features e realiza predicoes com modelos e novas features 
+
+2.15 depois de armazenado o pipeline de feature onde ele pode ser utilizado?
+no pipeline de treinamento e de inferencia
+
+2.16 qual a principal diferença o offline segundo o conceito do hopworks?
+criar conjunto de dados de treinamento (criar feature groups, alimentar elas, 
+gerar uma feature view e por meio dessa feature view temos acesso a 2 tipos de
+api (offline e online) criamos conjunto de dados de treinamento para treinar o
+) 2 passo: e podemos criar um conjunto de dados de inferencia em batch que é
+utilizado no pipeline de inferencia
+
+2.17 qual a principal diferença o online segundo o conceito do hopworks?
+temos uma feature store alimentada, onde precisamos recuperar dados dessa 
+feature store muito rapidamente em relacao ao que gente faria no offline, no
+online temos os conceito de feature vector  
+
+2.18 eu so consigo gerar conjunto de dados para inferencia no online? 
+nao no offline conseguimos gerar conjunto de dados em batch
+
+2.18 o que é uma feature vector?
+é ir la na feature store e pegar uma entidade que foi alimentada ali na feature
+store. essa entidade pode ser alimentada com base em 'n' feature groups. ele me
+retorna apenas uma unica linha de entidade, onde eu uso para inferencia
+
+2.19
