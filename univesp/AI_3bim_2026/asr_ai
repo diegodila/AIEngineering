@@ -358,6 +358,38 @@ sim, é assim que funciona o aprendizado supervisionado
 
 6.02 o que é medida indireta?
 Medida indireta é aquilo que um sistema mede quando o que interessa não pode
-ser medido diretamente. tambem conhecida como (proxy)
+ser medido diretamente. tambem conhecida como (proxy).
+Medida indireta é aquilo que um sistema mede quando o que interessa não pode 
+ser medido diretamente. Em inglês, a literatura técnica chama essa medida de 
+proxy. Feita a troca, o sistema decide com base na medida substituta e leva 
+para a decisão todas as diferenças que existem entre ela e a pergunta original. 
 
-6.03
+6.03 o que é AUC?
+AUC é a nota que mede o quanto um sistema de previsão separa dois grupos. Na 
+prática, ela fica entre 0,5 e 1: em 0,5 o sistema acerta o mesmo que uma moeda 
+jogada para o alto e em 1 ele separa os dois grupos sem errar nenhum caso. A 
+sigla vem do inglês area under the curve, o nome da área sob uma curva que 
+compara os acertos com os alarmes falsos.
+
+6.04 o que pé rotulo?
+Rótulo é a resposta certa que acompanha cada exemplo usado no treino. Numa 
+caixa de e-mail, o rótulo é a marca spam ou não spam que alguém colocou. No 
+estudo de Macaé, o rótulo é evadiu ou permaneceu. O sistema aprende a 
+reproduzir o rótulo que recebeu, seja ele qual for.
+
+m2
+6.05 quais sao as 4 perguntas de bussola de decisao etica?
+quem é afetado por esse sistema? - quem decide, quem desenvolve, quem pada pela
+decisao
+
+as pessoas afetadas sabem que ha um algoritmo
+decindo sobre elas? - que dados sao usados, que criterios pesam, o processo é 
+explicavel 
+
+quando o sistema erra quem responde? - quem é responsavel quando algo da errado
+a quem recorrer? 
+
+quanto custa manter isso de pé, e quem paga? - quais sao os impactos para as
+pessoas? o que pode ser perdido ou negado?
+
+6.06 
