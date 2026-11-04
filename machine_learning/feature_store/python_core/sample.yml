@@ -1,0 +1,30 @@
+---
+# This is a sample YAML configuration file
+company: "Tech Corp"
+established: 2015
+active: true
+
+# Nested object (dictionary)
+address:
+  city: "São Paulo"
+  country: "Brazil"
+  zip_code: "01000-000"
+
+# List (sequence) of items
+departments:
+  - "Engineering"
+  - "Product"
+  - "Support"
+
+# List of objects
+employees:
+  - name: "Ana"
+    role: "Developer"
+    skills:
+      - "Python"
+      - "YAML"
+  - name: "Carlos"
+    role: "Manager"
+    skills:
+      - "Leadership"
+      - "Agile"
